@@ -3,10 +3,24 @@ import Animation from "./animation";
 
 export default function Services() {
     return (
+<<<<<<< HEAD
         <div>
             <div className="bg-[url('../public/bg.png')] h-full bg-no-repeat bg-cover bg-center items-start justify-start">
                 <div>
                     <Animation />
+=======
+        <div className={` w-[1440px] max-w-full overflow-hidden flex flex-col items-start justify-start py-20 px-[103px] box-border relative gap-[57px] leading-[normal] tracking-[normal] text-left text-[40px] text-black font-body-1-bold ${PropTypes.string}`}>
+            <div className="items-start justify-start">
+            <div className="w-[633px] flex flex-col items-start justify-start gap-6 max-w-full">
+                <h1 className="text-[40px] py-08 font-[700] italic">
+                    Branding
+                </h1>
+                <div className="text-[20px] py-10 font-[400] leading-8">
+                    Our holistic branding solutions such as strategy, language and
+                    visualization not only ensure that your brand stands out amidst the
+                    noise but also resonates deeply with your audience thus touching
+                    ensuring connection.
+>>>>>>> 411a2bde19b6b00b8102f1146f8983eb5346b78e
                 </div>
             </div>
             <div className={`bg-[url('../public/bg.png')] h-full bg-no-repeat bg-cover bg-center w-[1440px] max-w-full overflow-hidden flex flex-col items-end justify-start py-20 px-[103px] box-border relative gap-[57px] leading-[normal] tracking-[normal] text-left text-[40px] text-black font-body-1-bold ${PropTypes.string}`}>
