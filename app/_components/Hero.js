@@ -5,7 +5,7 @@ import Image from "next/image";
 function Hero() {
 
   return (
-    <div className="bg-[url('../public/bg.png')] h-full bg-no-repeat bg-cover bg-center">
+    <div className="">
       <Navbar />
       <div>
         <div className="flex justify-between px-[101px] mt-[70px]">
