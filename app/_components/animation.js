@@ -14,8 +14,8 @@ export default function Animation() {
             path: '/loop_animation.json'
         });
     }, []);
-
+    
     return (
-        <div ref={animationContainer}></div>
+        <div className="w-[320px] h-[520px]" ref={animationContainer}></div>
     );
 }
