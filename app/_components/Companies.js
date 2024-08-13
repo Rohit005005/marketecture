@@ -19,14 +19,14 @@ const iconVarients = (duration) => ({
 function Companies() {
   return (
     <div className="flex border border-red-600 justify-center items-center h-[350px] w-[100%] mx-auto">
-      <motion.div>
+      <div>
         <Image
           src={"/comp1.png"}
           width={150}
           height={100}
           className="-translate-x-0 translate-y-20"
         />
-      </motion.div>
+      </div>
       <div>
         <Image
           src={"/comp2.png"}
