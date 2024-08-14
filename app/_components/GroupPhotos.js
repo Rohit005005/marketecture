@@ -13,7 +13,7 @@ function GroupPhotos() {
       </div>
       <div className="flex text-center w-[60%] mt-10">
         <p className="text-[20px] font-[400]">
-          Through our involvement, we've been honored to garner recognition for
+          Through our involvement, we&aposve been honored to garner recognition for
           our efforts, earning accolades in the form of awards while witnessing
           our CEO imparting insightful expertise as a keynote speaker on
           prestigious platforms. These experiences have enriched us, allowing us
