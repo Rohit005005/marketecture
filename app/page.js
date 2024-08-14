@@ -8,6 +8,7 @@ import GroupPhotos from "./_components/GroupPhotos";
 import Projects from "./_components/Projects";
 import ReadyToBuild from "./_components/ReadyToBuild";
 import WorkProcess from "./_components/WorkProcess";
+import Testimonies from "./_components/Testimonies";
 
 export default function Home() {
   return (
@@ -17,10 +18,11 @@ export default function Home() {
       {/* <CreativeMedia />
       <Marketing />
       <Technology /> */}
-      <ReadyToBuild/>
-      <Projects/>
+      <ReadyToBuild />
+      <Projects />
       <WorkProcess />
       <GroupPhotos />
+      <Testimonies />
     </div>
   );
 }
