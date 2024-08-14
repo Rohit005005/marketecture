@@ -7,6 +7,7 @@ import Companies from "./_components/Companies";
 import GroupPhotos from "./_components/GroupPhotos";
 import Projects from "./_components/Projects";
 import ReadyToBuild from "./_components/ReadyToBuild";
+import WorkProcess from "./_components/WorkProcess";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
       <Technology /> */}
       <ReadyToBuild/>
       <Projects/>
-      <GroupPhotos/>
+      <WorkProcess />
+      <GroupPhotos />
     </div>
   );
 }
