@@ -15,12 +15,15 @@ export default function Technology() {
                         ensuring seamless experiences across all touchpoints, from UI/UX Design to app development.
                     </div>
                 </div>
-                <button className={`cursor-pointer border-[#000] border-[1px] border-solid py-[14px] px-[36px] bg-[transparent] rounded-[32px] flex items-center justify-center hover:bg-[rgba(51,51,51,0.09)] hover:border-[#333] hover:border-[1px] hover:border-solid hover:box-border`}
-                >
-                    <b className="text-[16px] font-[500] font-bold ">
-                        See More
-                    </b>
-                </button>
+                <div className="w-[633px] flex flex-col items-center justify-center gap-6 max-w-full">
+                    <div className="items-center justify-center">
+                        <button
+                            className={`cursor-pointer border-[#000] border-[1px] border-solid py-[14px] px-[36px] bg-[transparent] rounded-[32px] flex items-center justify-center hover:bg-[rgba(51,51,51,0.09)] hover:border-[#333] hover:border-[1px] hover:border-solid hover:box-border`}
+                        >
+                            <b className="text-[16px] font-[500] font-bold ">See More</b>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
