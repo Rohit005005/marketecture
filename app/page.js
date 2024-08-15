@@ -9,6 +9,7 @@ import Projects from "./_components/Projects";
 import ReadyToBuild from "./_components/ReadyToBuild";
 import WorkProcess from "./_components/WorkProcess";
 import Testimonies from "./_components/Testimonies";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <WorkProcess />
       <GroupPhotos />
       <Testimonies />
+      <Footer/>
     </div>
   );
 }

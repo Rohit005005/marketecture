@@ -21,15 +21,15 @@ function GroupPhotos() {
           successes.
         </p>
       </div>
-        <div className="flex gap-10 mt-10">
-          <Image src={"/group1.png"} width={300} height={200}/>
-          <Image src={"/group2.png"} width={300} height={100} />
-          <Image src={"/group3.png"} width={300} height={200} />
-        </div>
-        <div className="flex gap-10">
+      <div className="flex gap-10 mt-10">
+        <Image src={"/group1.png"} width={300} height={200} />
+        <Image src={"/group2.png"} width={300} height={100} />
+        <Image src={"/group3.png"} width={300} height={200} />
+      </div>
+      <div className="flex gap-10">
         <Image src={"/group4.png"} width={300} height={200} />
         <Image src={"/group5.png"} width={300} height={200} />
-        </div>
+      </div>
     </div>
   );
 }
