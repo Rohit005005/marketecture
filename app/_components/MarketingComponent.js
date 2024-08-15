@@ -4,60 +4,62 @@ import Image from 'next/image';
 
 const MarketingComponent = () => {
     return (
-        <div className="ml-24 mt-8 mb-24 mr-24">
-            <div>
-                <h1 className="font-extrabold mt-12 text-4xl">
-                    What's all the <span className="text-red-500 italic">buzz</span> about?
-                </h1>
-            </div>
-            <div className="grid grid-cols-2 py-8">
+        <div className='items-center justify-center'>
+            <div className="ml-28 mt-8 mb-24 mr-24">
                 <div>
-                    <div className="grid grid-cols-10">
-                        <h1 className="col-span-9 font-light py-8 text-lg">
-                            5 Signs You Need to Hire a Digital Marketing Agency (and how to find the ideal one)
-                        </h1>
-                        <div className="col-span-1 flex items-center justify-center">
-                            <Image src="black_dark_arrrow.svg" width={24} height={5} alt="Arrow Icon" />
-                        </div>
-                    </div>
-                        <div className="border-t border-black"></div>
-                    <div className="grid grid-cols-10">
-                        <h1 className="col-span-9 font-light py-8 text-lg">
-                        How can an Influencer Marketing Agency 
-                        expand your reach?
-                        </h1>
-                        <div className="col-span-1 flex items-center justify-center">
-                            <Image src="black_dark_arrrow.svg" width={24} height={5} alt="Arrow Icon" />
-                        </div>
-                    </div>
-                        <div className="border-t border-black"></div>
-                    <div className="grid grid-cols-10">
-                        <h1 className="col-span-9 font-light py-8 text-lg">
-                        A Beginner’s Guide to working with an 
-                        Influencer Marketing Agency
-                        </h1>
-                        <div className="col-span-1 flex items-center justify-center">
-                            <Image src="black_dark_arrrow.svg" width={24} height={5} alt="Arrow Icon" />
-                        </div>
-                    </div>
-                        <div className="border-t border-black"></div>
+                    <h1 className="font-extrabold mt-12 text-4xl">
+                        What's all the <span className="text-red-500 italic">buzz</span> about?
+                    </h1>
                 </div>
-                <div className="ml-12 relative">
-                    <Image
-                        src={"/marketing_image.svg"}
-                        width={400}
-                        height={300}
-                        layout="fixed"
-                        className="absolute top-[-4%] left-6"
+                <div className="grid grid-cols-2 py-8">
+                    <div>
+                        <div className="grid grid-cols-10">
+                            <h1 className="col-span-9 font-light py-8 text-lg">
+                                5 Signs You Need to Hire a Digital Marketing Agency (and how to find the ideal one)
+                            </h1>
+                            <div className="col-span-1 flex items-center justify-center">
+                                <Image src="black_dark_arrrow.svg" width={24} height={5} alt="Arrow Icon" />
+                            </div>
+                        </div>
+                        <div className="border-t border-black"></div>
+                        <div className="grid grid-cols-10">
+                            <h1 className="col-span-9 font-light py-8 text-lg">
+                                How can an Influencer Marketing Agency
+                                expand your reach?
+                            </h1>
+                            <div className="col-span-1 flex items-center justify-center">
+                                <Image src="black_dark_arrrow.svg" width={24} height={5} alt="Arrow Icon" />
+                            </div>
+                        </div>
+                        <div className="border-t border-black"></div>
+                        <div className="grid grid-cols-10">
+                            <h1 className="col-span-9 font-light py-8 text-lg">
+                                A Beginner’s Guide to working with an
+                                Influencer Marketing Agency
+                            </h1>
+                            <div className="col-span-1 flex items-center justify-center">
+                                <Image src="black_dark_arrrow.svg" width={24} height={5} alt="Arrow Icon" />
+                            </div>
+                        </div>
+                        <div className="border-t border-black"></div>
+                    </div>
+                    <div className="ml-24 relative">
+                        <Image
+                            src={"/marketing_image.svg"}
+                            width={400}
+                            height={300}
+                            layout="fixed"
+                            className="absolute top-[-4%] left-6"
                         />
-                    <Image
-                        src={"/explore_now.svg"}
-                        width={76}
-                        height={40}
-                        layout="fixed"
-                        className="absolute top-[-15%] left-0"
+                        <Image
+                            src={"/explore_now.svg"}
+                            width={76}
+                            height={40}
+                            layout="fixed"
+                            className="absolute top-[-15%] left-0"
                         // className="rounded-lg shadow-md"
-                    />
+                        />
+                    </div>
                 </div>
             </div>
         </div>
