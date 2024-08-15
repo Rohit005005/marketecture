@@ -125,7 +125,7 @@ function Footer() {
       </div>
       <div className="flex gap-20 justify-center items-center mt-10">
       {footervectors2.map((item, index) => (
-            <div className="flex gap-4">
+            <div className="flex gap-4" key={index}>
               <div className="flex justify-center items-center">
                 <Image src={item.img} height={20} width={20} />
               </div>
