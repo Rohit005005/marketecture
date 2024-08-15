@@ -3,16 +3,15 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Link from "next/link";
 
 const boxVariant = {
   visible: { y: 0, opacity: 1, transition: { duration: 1 } },
-  hidden: { y: -100, opacity: 0 },
+  hidden: { y: -50, opacity: 0 },
 };
 
 const boxVariant2 = {
   visible: { y: 0, opacity: 1, transition: { duration: 1 } },
-  hidden: { y: -100, opacity: 0 },
+  hidden: { y: -50, opacity: 0 },
 };
 
 const Box = ({ num }) => {
@@ -28,7 +27,7 @@ const Box = ({ num }) => {
   }, [control, inView]);
 
   return (
-    <motion.div className="box flex justify-center items-center h-[350px] w-[100%] mx-auto">
+    <motion.div className="box flex justify-center items-center h-[350px] w-[100%] mx-auto mt-5">
       <motion.div
         ref={ref}
         variants={boxVariant2}
@@ -125,11 +124,7 @@ const Box = ({ num }) => {
 };
 
 function Projects() {
-  return (
-    <div className="flex flex-col justify-center items-center mt-40">
-      <Box num={1} />
-    </div>
-  );
+  return <Box num={1} />;
 }
 
 export default Projects;
