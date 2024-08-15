@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-import Animation from "./animation";
+import Animation from "./Animation";
 // import PropTypes from "prop-types";
 
 export default function Services() {
   return (
-    <div>
+    <div className="grid grid-cols-2">
       <Animation />
       <div
-        className={` w-[1440px] max-w-full overflow-hidden flex flex-col items-end justify-start py-20 px-[103px] box-border relative gap-[57px] leading-[normal] tracking-[normal] text-left text-[40px] text-black font-body-1-bold ${PropTypes.string}`}
+        className={`w-[1440px] max-w-full overflow-hidden flex flex-col items-end justify-start py-20 px-[13px] box-border relative gap-[57px] leading-[normal] tracking-[normal] text-left text-[40px] text-black font-body-1-bold ${PropTypes.string}`}
       >
         <div className="items-start justify-start">
           <div className="w-[633px] flex flex-col items-start justify-start gap-6 max-w-full">
