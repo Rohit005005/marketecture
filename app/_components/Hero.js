@@ -103,14 +103,6 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="ml-[90%] w-[115px] h-[108px]">
-        <Image
-                src={"/social_group.png"}
-                width={500}
-                height={100}
-                
-              />
-        </div>
       </div>
     </div>
   );
