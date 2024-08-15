@@ -113,7 +113,7 @@ function Footer() {
       <hr className="my-10 border-[#BBBBBB]" />
       <div className="flex gap-20 justify-center items-center">
       {footervectors1.map((item, index) => (
-            <div className="flex gap-4">
+            <div className="flex gap-4" key={index}>
               <div className="flex justify-center items-center">
                 <Image src={item.img} height={20} width={20} />
               </div>
