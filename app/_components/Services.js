@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import Animation from "./Animation";
 // import PropTypes from "prop-types";
 
 export default function Services() {
