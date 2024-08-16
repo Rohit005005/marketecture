@@ -16,6 +16,6 @@ export default function Animation() {
     }, []);
     
     return (
-        <div className="w-[520px] h-[520px]" ref={animationContainer}></div>
+        <div className="max-w-full" ref={animationContainer}></div>
     );
 }
