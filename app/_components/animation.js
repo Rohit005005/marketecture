@@ -14,8 +14,8 @@ export default function Animation() {
             path: '/loop_animation.json'
         });
     }, []);
-    
+
     return (
-        <div className="max-w-full" ref={animationContainer}></div>
+        <div className="overflow-hidden" ref={animationContainer}></div>
     );
 }
