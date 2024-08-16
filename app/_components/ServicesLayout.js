@@ -5,6 +5,7 @@ import CreativeMedia from "./CreativeMedia";
 import Marketing from "./Marketing";
 import Services from "./Services";
 import Technology from "./Technology";
+import Animation from "./animation";
 
 export default function FixedServicesLayout() {
     const [visibleComponent, setVisibleComponent] = useState(null);
