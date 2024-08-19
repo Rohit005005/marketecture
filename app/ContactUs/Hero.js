@@ -8,7 +8,7 @@ function Hero() {
       <Navbar />
       <div>
         <div className="justify-start items-start">
-          <h1 className="ml-24 py-10 text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text inline-block text-transparent">CONTACT US</h1>
+          <h1 className="ml-24 py-10 text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text inline-block text-transparent">CONTACT US</h1>
         </div>
         <div className="max-w-full place-items-center justify-center items-center text-center">
           <div className="mt-10 text-red-500 text-4xl font-bold ">
