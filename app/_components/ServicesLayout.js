@@ -52,7 +52,7 @@ export default function FixedServicesLayout() {
                 </div>
             </div>
 
-            <div className="overflow-y-auto">
+            <div className="overflow-y-auto max-w-screen">
                 <div
                     ref={servicesRef}
                     data-name="services"
