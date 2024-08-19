@@ -4,7 +4,7 @@ export default function ContactUs() {
     return (
         <>
             <Hero />
-
+            <div className="border-t border-gray-400"></div>
             <Footer />
         </>
     );

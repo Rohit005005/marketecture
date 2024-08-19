@@ -1,0 +1,29 @@
+export default function Mission() {
+    return (
+        <div className="ml-10 mr-10 w-[600px] h-[320px] bg-[url('../public/bgfull.png')] h-full bg-cover bg-center drop-shadow-2xl rounded-lg">
+            <div className="items-center justify-center text-center">
+                <h1 className="mt-10 font-extrabold text-4xl text-gray-600">OUR VISION</h1>
+            </div>
+            <div className="ml-5 mt-4">
+                <svg width="560" height="2" viewBox="0 0 640 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L638.257 1" stroke="url(#paint0_linear_625_33)" stroke-width="2" stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_625_33" x1="-3.68227e-08" y1="1" x2="638" y2="1" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F470D9" />
+                            <stop offset="1" stop-color="#6E68ED" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div className="mt-12 px-8  text-center">
+                <p>
+                    We are an Independent creative marketing agency with a vision to set new standards
+                    and create history. We have developed as our customers have dependably requested more
+                    from us than what we do taking a look at the outcomes. With the firm conviction that your
+                    prosperity is totally basic to our own, we need all our clients, regardless of size, to
+                    consider us as long-term partners.
+                </p>
+            </div>
+        </div>
+    );
+}
