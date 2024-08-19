@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Location() {
     return (
         <div className="relative flex flex-col items-center">
-            {/* Container for the three top images */}
+
             <div className="relative flex space-x-4 z-20">
                 <Image
                     src={"/svgs/address.svg"}
@@ -28,7 +28,6 @@ export default function Location() {
                 />
             </div>
 
-            {/* Background image positioned below the top images */}
             <div className="relative w-full flex justify-center mt-[-108px] z-10">
                 <Image
                     src={"/svgs/location_tag.svg"}
