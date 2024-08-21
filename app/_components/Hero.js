@@ -12,9 +12,9 @@ function Hero() {
             <h1 className="text-[16px] sm:text-[32px] font-[500]">
               Your one-stop solution to
             </h1>
-            <h1 className="text-[20px] sm:text-[40px] py-5 sm:py-10 font-[700]">
-              improve your conversions
-            </h1>
+            <div class="w-max">
+            <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black my-5 sm:my-10 pr-3 sm:pr-10 text-[20px] sm:text-[40px] font-[700]">improve your conversions</h1>
+            </div>
             <h1 className="text-[15px] sm:text-[20px] py-5 sm:py-10 font-[400]">
               We build, grow and help you scale by bringing the best digital
               marketing initiatives that aligns with your brand’s mission.
