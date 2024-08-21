@@ -29,7 +29,7 @@ function Hero() {
             </div>
           </div>
           <div className="w-[300px] sm:w-[350px] h-[300px] sm:h-[350px] flex justify-center items-center rounded-full bg-[url('../public/girlbg.png')] bg-no-repeat bg-cover bg-center">
-            <div className="w-[231px] h-[248px] relative ">
+            <div className="hidden sm:block w-[231px] h-[248px] relative ">
               <Image
                 src={"/girl.png"}
                 width={900}
@@ -65,6 +65,44 @@ function Hero() {
                 width={900}
                 height={100}
                 className="absolute -translate-y-[10px] -translate-x-[180px]"
+              />
+            </div>
+            <div className="block sm:hidden w-[231px] h-[248px] relative">
+              <Image
+                src={"/girl.png"}
+                width={200}
+                height={100}
+                className="p-5 m-auto"
+              />
+              <Image
+                src={"/leadsmall.png"}
+                width={170}
+                height={100}
+                className="absolute -translate-y-[200px] -translate-x-[80px] "
+              />
+              <Image
+                src={"/creativesmall.png"}
+                width={170}
+                height={100}
+                className="absolute -translate-y-[190px] translate-x-[130px]"
+              />
+              <Image
+                src={"/paidsmall.png"}
+                width={170}
+                height={100}
+                className="absolute -translate-y-[130px] -translate-x-[80px]"
+              />
+              <Image
+                src={"/seosmall.png"}
+                width={170}
+                height={100}
+                className="absolute -translate-y-[90px] translate-x-[150px]"
+              />
+              <Image
+                src={"/contentsmall.png"}
+                width={170}
+                height={100}
+                className="absolute -translate-y-[10px] -translate-x-[80px]"
               />
             </div>
           </div>
