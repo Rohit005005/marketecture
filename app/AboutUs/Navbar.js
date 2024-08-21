@@ -11,12 +11,12 @@ function Navbar() {
       </div>
       <div className="flex justify-between items-center gap-10">
         <div className="text-black flex gap-5 text-[16px]">
-          <Link href="/"><p><b>Home</b></p></Link>
+          <Link href="/"><p>Home</p></Link>
           <p>Case Studies</p>
           <p>Services</p>
           <p>Blog</p>
           <p>Clients</p>
-          <Link href="/AboutUs"><p>About Us</p></Link>
+          <Link href="/"><p><b>About Us</b></p></Link>
           <Link href="/ContactUs"><p>Contact</p></Link>
         </div>
         <div>

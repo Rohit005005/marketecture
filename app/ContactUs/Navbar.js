@@ -11,13 +11,13 @@ function Navbar() {
       </div>
       <div className="flex justify-between items-center gap-10">
         <div className="text-black flex gap-5 text-[16px]">
-          <Link href="/"><p><b>Home</b></p></Link>
+          <Link href="/"><p>Home</p></Link>
           <p>Case Studies</p>
           <p>Services</p>
           <p>Blog</p>
           <p>Clients</p>
           <Link href="/AboutUs"><p>About Us</p></Link>
-          <Link href="/ContactUs"><p>Contact</p></Link>
+          <Link href="/ContactUs"><p><b>Contact</b></p></Link>
         </div>
         <div>
           <button className="bg-black text-white px-5 py-2 text-[16px] rounded-full">

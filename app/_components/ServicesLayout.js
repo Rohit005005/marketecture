@@ -17,7 +17,7 @@ export default function FixedServicesLayout() {
 
     useEffect(() => {
         const options = {
-            threshold: 1.0, 
+            threshold: 1.0,
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -45,7 +45,7 @@ export default function FixedServicesLayout() {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="relative">
                 <div className="sticky top-20">
                     <Animation />
