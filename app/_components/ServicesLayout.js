@@ -17,7 +17,7 @@ export default function FixedServicesLayout() {
 
     useEffect(() => {
         const options = {
-            threshold: 1.0,
+            threshold: 0.5,
         };
 
         const observer = new IntersectionObserver((entries) => {
