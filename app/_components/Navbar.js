@@ -16,8 +16,8 @@ function Navbar() {
           <p>Services</p>
           <p>Blog</p>
           <p>Clients</p>
-          <Link href="/AboutUs"><p>About Us</p></Link>
-          <Link href="/ContactUs"><p>Contact</p></Link>
+          <p>About Us</p>
+          <p>Contact</p>
         </div>
         <div>
           <button className="bg-black text-white px-5 py-2 text-[16px] rounded-full">
