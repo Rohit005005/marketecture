@@ -11,7 +11,7 @@ const MarketingComponent = () => {
                         What's all the <span className="text-red-500 italic">buzz</span> about?
                     </h1>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 py-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 py-8 items-center justify-center">
                     <div>
                         <div className="grid grid-cols-10">
                             <h1 className="col-span-9 font-light py-8 text-lg">
@@ -43,7 +43,7 @@ const MarketingComponent = () => {
                         </div>
                         <div className="border-t border-black"></div>
                     </div>
-                    <div className="ml-24 relative h-[200px]">
+                    <div className="ml-12 mt-12 mb-[25%] relative h-[200px] ">
                         <Image
                             src={"/marketing_image.svg"}
                             width={400}
