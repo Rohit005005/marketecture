@@ -124,7 +124,7 @@ const Box = ({ num }) => {
 };
 
 function Projects() {
-  return <Box num={1} />;
+  return <Box num={1}/>;
 }
 
 export default Projects;

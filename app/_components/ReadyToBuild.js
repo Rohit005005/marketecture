@@ -2,7 +2,7 @@ import React from "react";
 
 function ReadyToBuild() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className="flex flex-col justify-center items-center gap-1">
         <h1 className="text-[24px] sm:text-[40px] font-[800]">Ready to build</h1>
         <h1 className="text-[16px] sm:text-[40px] italic">your stack to success?</h1>
