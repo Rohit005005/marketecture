@@ -1,6 +1,6 @@
 export default function Mission() {
     return (
-        <div className="ml-10 mr-10 w-[600px] h-[380px] bg-[url('../public/bgfull.png')] h-full bg-cover bg-center drop-shadow-2xl rounded-2xl">
+        <div className="ml-10 mr-10 w-[600px] h-[384px] bg-[url('../public/bgfull.png')] h-full bg-cover bg-center drop-shadow-2xl rounded-2xl">
             <div className="items-center justify-center text-center">
                 <h1 className="mt-10 font-extrabold text-4xl text-gray-600">OUR MISSION</h1>
             </div>
