@@ -12,7 +12,7 @@ function Hero() {
         <div className="justify-start items-start">
           <h1 className="ml-24 py-10 text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text inline-block text-transparent">ABOUT US</h1>
         </div>
-        <div className="ml-24 grid grid-cols-10">
+        <div className="ml-24 grid grid-cols-1 md:grid-cols-10">
           <div className="mt-12 col-span-2">
             <Image
               src={"/logo-about-us.png"}
@@ -41,9 +41,13 @@ function Hero() {
           </div>
         </div>
         <div className="py-24">
-          <div className="items-center justify-center grid grid-cols-1 md:grid-cols-2">
-            <div><Vision /></div>
-            <div><Mission /></div>
+          <div className="px-12 gap-8 items-center justify-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+            <div className="flex items-center justify-center">
+              <Vision />
+            </div>
+            <div className="flex items-center justify-center">
+              <Mission />
+            </div>
           </div>
         </div>
       </div>
