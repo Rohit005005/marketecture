@@ -44,7 +44,7 @@ function Footer() {
     },
   ];
   return (
-    <div className="flex flex-col bg-black p-5 sm:p-20">
+    <div className="flex flex-col bg-black p-5 sm:p-20 overflow-x-hidden">
       <div className=" flex flex-col sm:flex-row gap-20 justify-center">
         <div className="flex flex-col gap-10 sm:w-[40%]">
           <div>

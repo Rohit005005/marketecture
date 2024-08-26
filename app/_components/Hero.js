@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Navbar />
       <div>
         <div className="flex flex-col-reverse sm:flex-row justify-between items-center sm:px-[101px] mt-[70px]">

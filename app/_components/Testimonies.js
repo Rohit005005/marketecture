@@ -3,7 +3,7 @@ import React from "react";
 
 function Testimonies() {
   return (
-    <div className="mb-12">
+    <div className="mb-12 overflow-x-hidden">
       <div className="ml-5 sm:ml-20 mt-20 mb-10 sm:mb-0">
         <h1 className="text-[24px] sm:text-[64px] font-[800] text-red-500">
           Thier Words

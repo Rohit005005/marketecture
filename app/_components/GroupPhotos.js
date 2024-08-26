@@ -3,7 +3,7 @@ import React from "react";
 
 function GroupPhotos() {
   return (
-    <div className="flex flex-col justify-center items-center mt-10">
+    <div className="flex flex-col justify-center items-center mt-10 overflow-x-hidden">
       <div className="flex flex-col justify-center items-center gap-1">
         <h1 className="text-[15px] sm:text-[24px] font-[400]">#spintersported</h1>
         <h1 className="text-[24px] sm:text-[40px] text-red-500 font-[800]">

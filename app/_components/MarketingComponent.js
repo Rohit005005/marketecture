@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const MarketingComponent = () => {
     return (
-        <div className='items-center justify-center'>
+        <div className='items-center justify-center overflow-x-hidden'>
             <div className="sm:ml-28 mt-8 mb-24 px-5 sm:px-0 sm:mr-24 ">
                 <div>
                     <h1 className="font-extrabold mt-12 text-[24px] sm:text-4xl">
