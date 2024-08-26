@@ -1,6 +1,6 @@
 export default function Mission() {
     return (
-        <div className="ml-10 mr-10 w-[600px] h-[384px] bg-[url('../public/bgfull.png')] h-full bg-cover bg-center drop-shadow-2xl rounded-2xl">
+        <div className="w-[600px] h-[384px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
             <div className="items-center justify-center text-center">
                 <h1 className="mt-10 font-extrabold text-4xl text-gray-600">OUR MISSION</h1>
             </div>
@@ -15,7 +15,7 @@ export default function Mission() {
                     </defs>
                 </svg>
             </div>
-            <div className="mt-12 px-8  text-center">
+            <div className="mt-12 px-8 text-center">
                 <p>
                     To ensure long-term success for our companies, we strive diligently to combine
                     the best of digital and traditional marketing strategies. We will accomplish this

@@ -41,9 +41,9 @@ function Hero() {
           </div>
         </div>
         <div className="py-24">
-          <div className="grid md:grid-cols-2">
-            <Vision />
-            <Mission />
+          <div className="items-center justify-center grid grid-cols-1 md:grid-cols-2">
+            <div><Vision /></div>
+            <div><Mission /></div>
           </div>
         </div>
       </div>
