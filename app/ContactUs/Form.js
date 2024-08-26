@@ -53,7 +53,7 @@ const ContactForm = () => {
 
 export default function Form() {
     return (
-        <div className="py-14">
+        <div className="py-14 px-12">
             <div className="mb-10">
                 <h1 className="font-bold ml-24">Send Message</h1>
             </div>
