@@ -12,7 +12,7 @@ function NavbarMobile({ onClose }) {
           <CircleArrowLeft size={50} strokeWidth={1} />{" "}
         </button>
         <div className="w-[73px] sm:w-[93px] h-[50px] sm:h-[70px] flex justify-center items-center ">
-          <Image src={"/logo.png"} width={900} height={100}/>
+          <Image src={"/logo.png"} width={900} height={100} />
         </div>
       </div>
       <div className="flex flex-col mt-5 ">
@@ -51,8 +51,12 @@ function Navbar() {
           <p>Services</p>
           <p>Blog</p>
           <p>Clients</p>
-          <p>About Us</p>
-          <p>Contact</p>
+          <Link href={"/AboutUs"}>
+            <p>About Us</p>
+          </Link>
+          <Link href={"/ContactUs"}>
+            <p>Contact</p>
+          </Link>
         </div>
         <div>
           <button className="bg-black text-white px-5 py-2 sm:text-[16px] text-[13px] whitespace-nowrap rounded-full">
