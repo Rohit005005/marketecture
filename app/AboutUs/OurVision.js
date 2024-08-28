@@ -1,11 +1,11 @@
 export default function Vision() {
     return (
-        <div className="ml-10 mr-10 w-[600px] h-[384px] bg-[url('../public/bgfull.png')] h-full bg-cover bg-center drop-shadow-2xl rounded-2xl">
-            <div className="items-center justify-center text-center">
-                <h1 className="mt-10 font-extrabold text-4xl text-gray-600">OUR VISION</h1>
+        <div className="sm:h-max md:h-[380px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
+            <div className="items-center justify-center text-center ">
+                <h1 className="px-4 mt-10 font-extrabold text-4xl text-gray-600">OUR VISION</h1>
             </div>
-            <div className="ml-5 mt-4">
-                <svg width="560" height="2" viewBox="0 0 640 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="pt-4 px-4">
+                <svg width="100%" height="2" viewBox="0 0 640 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L638.257 1" stroke="url(#paint0_linear_625_33)" stroke-width="2" stroke-linecap="round" />
                     <defs>
                         <linearGradient id="paint0_linear_625_33" x1="-3.68227e-08" y1="1" x2="638" y2="1" gradientUnits="userSpaceOnUse">
@@ -15,7 +15,7 @@ export default function Vision() {
                     </defs>
                 </svg>
             </div>
-            <div className="mt-12 px-8  text-center">
+            <div className="py-12 px-8 items-center justify-center text-center">
                 <p>
                     We are an Independent creative marketing agency with a vision to set new standards
                     and create history. We have developed as our customers have dependably requested more
