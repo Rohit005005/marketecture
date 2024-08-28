@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
 
 function Hero() {
+
   return (
     <div className="overflow-x-hidden">
       <Navbar />
@@ -13,7 +15,9 @@ function Hero() {
               Your one-stop solution to
             </h1>
             <div class="w-max">
-            <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black my-5 sm:my-10 pr-3 sm:pr-10 text-[20px] sm:text-[40px] font-[700]">improve your conversions</h1>
+              <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black my-5 sm:my-10 pr-3 sm:pr-10 text-[20px] sm:text-[40px] font-[700]">
+                improve your conversions
+              </h1>
             </div>
             <h1 className="text-[15px] sm:text-[20px] py-5 sm:py-10 font-[400]">
               We build, grow and help you scale by bringing the best digital
@@ -36,36 +40,36 @@ function Hero() {
                 height={100}
                 className="p-5"
               />
-              <Image
-                src={"/lead_generation.png"}
-                width={900}
-                height={100}
-                className="absolute -translate-y-[240px] -translate-x-[140px] "
-              />
-              <Image
-                src={"/creative_marketing.png"}
-                width={900}
-                height={100}
-                className="absolute -translate-y-[240px] translate-x-[130px]"
-              />
-              <Image
-                src={"/paid_marketing.png"}
-                width={900}
-                height={100}
-                className="absolute -translate-y-[150px] -translate-x-[180px]"
-              />
-              <Image
-                src={"/seo_services.png"}
-                width={900}
-                height={100}
-                className="absolute -translate-y-[90px] translate-x-[150px]"
-              />
-              <Image
-                src={"/content_marketing.png"}
-                width={900}
-                height={100}
-                className="absolute -translate-y-[10px] -translate-x-[180px]"
-              />
+              <div
+              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[140px]">
+                 <p className="text-[16px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">   
+                  Lead Generation
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[240px] translate-x-[130px]">
+                 <p className="text-[16px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">   
+                  Creative Marketing
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[150px] -translate-x-[180px]">
+                 <p className="text-[16px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">   
+                  Paid Marketing
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[90px] translate-x-[150px]">
+                 <p className="text-[16px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">   
+                  SEO Services
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[10px] -translate-x-[180px]">
+                 <p className="text-[16px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">   
+                  Content Marketing
+                </p>
+              </div>
             </div>
             <div className="block sm:hidden w-[231px] h-[248px] relative">
               <Image
@@ -74,36 +78,36 @@ function Hero() {
                 height={100}
                 className="p-5 m-auto"
               />
-              <Image
-                src={"/leadsmall.png"}
-                width={170}
-                height={100}
-                className="absolute -translate-y-[200px] -translate-x-[80px] "
-              />
-              <Image
-                src={"/creativesmall.png"}
-                width={170}
-                height={100}
-                className="absolute -translate-y-[190px] translate-x-[130px]"
-              />
-              <Image
-                src={"/paidsmall.png"}
-                width={170}
-                height={100}
-                className="absolute -translate-y-[130px] -translate-x-[80px]"
-              />
-              <Image
-                src={"/seosmall.png"}
-                width={170}
-                height={100}
-                className="absolute -translate-y-[90px] translate-x-[150px]"
-              />
-              <Image
-                src={"/contentsmall.png"}
-                width={170}
-                height={100}
-                className="absolute -translate-y-[10px] -translate-x-[80px]"
-              />
+              <div
+              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[210px] -translate-x-[50px]">
+                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">   
+                  Lead Generation
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[170px] translate-x-[140px]">
+                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">   
+                  Creative Marketing
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[130px] -translate-x-[80px]">
+                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">   
+                  Paid Marketing
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[70px] translate-x-[140px]">
+                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">   
+                  SEO Services
+                </p>
+              </div>
+              <div
+              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[15px] -translate-x-[70px]">
+                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">   
+                  Content Marketing
+                </p>
+              </div>
             </div>
           </div>
         </div>

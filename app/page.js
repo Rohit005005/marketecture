@@ -12,6 +12,7 @@ import Testimonies from "./_components/Testimonies";
 import Footer from "./_components/Footer";
 import MarketingComponent from "./_components/MarketingComponent";
 import FixedServicesLayout from "./_components/ServicesLayout";
+import BouncingImages from "./_components/drop";
 
 export default function Home() {
   return (
@@ -22,8 +23,7 @@ export default function Home() {
       <CreativeMedia />
       <Marketing />
       <Technology /> */}
-      <ReadyToBuild />
-      <Projects />
+      <BouncingImages />
       <WorkProcess />
       <GroupPhotos />
       <Testimonies />
