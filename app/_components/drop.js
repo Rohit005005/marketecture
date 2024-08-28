@@ -87,7 +87,7 @@ const BouncingImages = () => {
       const y = Math.random() * (render.options.height - 100) + 50;
 
       return Matter.Bodies.rectangle(x, y, 100, 100, {
-        restitution: 0.8,
+        restitution: 1.1,
         render: {
           sprite: {
             texture: image,
