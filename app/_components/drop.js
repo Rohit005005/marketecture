@@ -113,6 +113,10 @@ const BouncingImages = () => {
     });
     Matter.World.add(world, mouseConstraint);
 
+    // Remove event listeners that block scrolling
+    mouse.element.removeEventListener('wheel', mouse.mousewheel);
+    mouse.element.removeEventListener('DOMMouseScroll', mouse.mousewheel);
+
     // Intersection Observer to trigger animation on scroll
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -146,15 +150,15 @@ const BouncingImages = () => {
     };
   }, []);
 
-  return(
-  <div className="relative flex justify-center">
-    <ReadyToBuild />
-    <div
-      ref={sceneRef}
-      className="w-full h-[60vh] sm:h-[70vh] overflow-hidden border-none p-0 m-0 bg-transparent"
-    />
-    ;
-  </div>)
+  return (
+    <div className="relative flex justify-center">
+      <ReadyToBuild />
+      <div
+        ref={sceneRef}
+        className="w-full h-[60vh] sm:h-[70vh] border-none p-0 m-0 bg-transparent"
+      />
+    </div>
+  );
 };
 
 export default BouncingImages;
