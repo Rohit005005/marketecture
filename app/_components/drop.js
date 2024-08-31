@@ -44,27 +44,27 @@ const BouncingImages = () => {
         render.options.width / 2,
         0 - wallThickness / 2,
         render.options.width,
-        wallThickness,
+        wallThickness, // Problem isme hai -> fix the width
         { isStatic: true }
       ),
       Matter.Bodies.rectangle(
         render.options.width / 2,
         render.options.height + wallThickness / 2,
         render.options.width,
-        wallThickness,
+        wallThickness, // Problem isme hai -> fix the width
         { isStatic: true }
       ),
       Matter.Bodies.rectangle(
         0 - wallThickness / 2,
         render.options.height / 2,
-        wallThickness,
+        wallThickness, // Problem isme hai -> fix the width
         render.options.height,
         { isStatic: true }
       ),
       Matter.Bodies.rectangle(
         render.options.width + wallThickness / 2,
         render.options.height / 2,
-        wallThickness,
+        wallThickness, // Problem isme hai -> fix the width
         render.options.height,
         { isStatic: true }
       ),
