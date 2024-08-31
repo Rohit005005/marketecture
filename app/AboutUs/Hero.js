@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Image from "next/image";
 import Vision from "./OurVision";
 import Mission from "./OurMission";
+import Navbar from "../_components/Navbar";
 function Hero() {
 
   return (
