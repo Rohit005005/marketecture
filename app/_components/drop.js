@@ -45,28 +45,44 @@ const BouncingImages = () => {
         0 - wallThickness / 2,
         render.options.width,
         wallThickness,
-        { isStatic: true }
+        { isStatic: true,
+          render: {
+            visible: false, // Make the wall invisible
+          },
+         }
       ),
       Matter.Bodies.rectangle(
         render.options.width / 2,
         render.options.height + wallThickness / 2,
         render.options.width,
         wallThickness,
-        { isStatic: true }
+        { isStatic: true,
+          render: {
+            visible: false, // Make the wall invisible
+          },
+         }
       ),
       Matter.Bodies.rectangle(
         0 - wallThickness / 2,
         render.options.height / 2,
         wallThickness,
         render.options.height,
-        { isStatic: true }
+        { isStatic: true,
+          render: {
+            visible: false, // Make the wall invisible
+          },
+         }
       ),
       Matter.Bodies.rectangle(
         render.options.width + wallThickness / 2,
         render.options.height / 2,
         wallThickness,
         render.options.height,
-        { isStatic: true }
+        { isStatic: true,
+          render: {
+            visible: false, // Make the wall invisible
+          },
+         }
       ),
     ];
     Matter.World.add(world, walls);
