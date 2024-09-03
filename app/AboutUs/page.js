@@ -8,7 +8,7 @@ export default function ContactUs() {
     return (
         <>
             <Hero />
-            <div className="border-t border-gray-400"></div>
+            <div className="border-t border-gray-400 hidden sm:block"></div>
             <Features />
             <AboutTestimonies />
             <ContactCards />

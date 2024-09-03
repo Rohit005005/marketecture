@@ -2,13 +2,13 @@ export default function Features() {
     return (
         <div>
             <div className="justify-center items-center text-center w-full">
-                <h1 className="mt-10 text-4xl font-bold bg-gradient-to-r from-pink-300 to-purple-700 bg-clip-text inline-block text-transparent">HOW WE WORK?</h1>
+                <h1 className="mt-10 sm:text-4xl text-[24px] font-bold bg-gradient-to-r from-pink-300 to-purple-700 bg-clip-text inline-block text-transparent">HOW WE WORK?</h1>
             </div>
             <div className="justify-center items-center text-center w-full">
-                <h1 className="mt-5 mb-5 text-4xl font-bold">Super <span className="bg-red-500 bg-clip-text inline-block text-transparent">Powerful</span> Feature</h1>
+                <h1 className="sm:mt-5 mt-2 mb-5 text-[20px] sm:text-4xl font-bold">Super <span className="bg-red-500 bg-clip-text inline-block text-transparent">Powerful</span> Feature</h1>
             </div>
             <div className="py-4">
-                <div className="flex items-center justify-center py-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center sm:py-4">
                     <FeatureTemplate
                         path={FeatureNum[1]['path']}
                         title={FeatureNum[1]['title']}
@@ -25,7 +25,7 @@ export default function Features() {
                         desc={FeatureNum[3]['desc']}
                     />
                 </div>
-                <div className="flex items-center justify-center py-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center sm:py-4">
                     <FeatureTemplate
                         path={FeatureNum[4]['path']}
                         title={FeatureNum[4]['title']}
@@ -37,7 +37,7 @@ export default function Features() {
                         desc={FeatureNum[5]['desc']}
                     />
                 </div>
-                <div className="flex items-center justify-center py-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center sm:py-4">
                     <FeatureTemplate
                         path={FeatureNum[6]['path']}
                         title={FeatureNum[6]['title']}
@@ -106,10 +106,10 @@ const FeatureNum = {
 const FeatureTemplate = ({ path, title, desc }) => {
     return (
         <div className="flex items-center justify-center">
-            <div className="relative w-[113px] h-[112px]">
+            <div className="relative w-[112px] h-[112px]">
                 <svg
                     className="absolute top-0 left-0"
-                    width="113"
+                    width="112"
                     height="112"
                     viewBox="0 0 113 112"
                     fill="none"

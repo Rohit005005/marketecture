@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ContactCards() {
     return (
-        <div className="pt-14 flex flex-cols items-center justify-center">
+        <div className="pt-14 flex flex-col sm:flex-row items-center justify-center">
             <Image
                 src={"/svgs/address.svg"}
                 width={"348"}
