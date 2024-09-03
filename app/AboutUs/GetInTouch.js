@@ -61,7 +61,7 @@ export default function GetInTouch() {
                 <div className="justify-center items-center w-full sm:ml-10 ml-5">
                     <h1 className="mt-1 mb-5 sm:text-3xl text-[20px] font-bold">Let's Talk<span className="bg-red-500 bg-clip-text inline-block text-transparent">!!! </span></h1>
                 </div>
-                <div className="mx-5 sm:mx-20 py-10 mb-10 bg-[#60606038]">
+                <div className="mx-5 sm:mx-20 py-10 mb-10 bg-[#60606038] rounded-lg">
                     <div className="mb-10">
                         <h1 className="font-bold ml-10 text-[20px]">Send Message</h1>
                     </div>

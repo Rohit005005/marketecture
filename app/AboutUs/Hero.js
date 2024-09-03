@@ -35,7 +35,7 @@ function Hero() {
             </svg>
           </div>
           <div className="sm:mt-14 sm:ml-[-5%] col-span-7 sm:mr-40 px-5 sm:px-0 py-2 sm:py-0">
-            <div className="border-t-[1px] border-black my-10 w-[80%] mx-auto"></div>
+            <div className="border-t-[1px] border-black my-10 w-[80%] mx-auto block sm:hidden"></div>
             <p>
               A group of creative thinkers gathered under one roof collaboratively
               striving forward with a motto to take business developments to its pinnacle.
