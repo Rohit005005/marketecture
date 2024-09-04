@@ -2,7 +2,7 @@
 const ContactForm = () => {
     return (
       <div className="flex justify-center items-center">
-        <form className="max-w-full w-full px-24">
+        <form className="max-w-full w-full px-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div>
               <input
@@ -53,9 +53,9 @@ const ContactForm = () => {
 
 export default function Form() {
     return (
-        <div className="py-14 px-12">
+        <div className="mx-5 sm:mx-20 py-10 my-5 sm:my-10 bg-[#60606038] rounded-lg">
             <div className="mb-10">
-                <h1 className="font-bold ml-24">Send Message</h1>
+                <h1 className="font-bold ml-10 text-[20px]">Send Message</h1>
             </div>
             <ContactForm />
         </div>
