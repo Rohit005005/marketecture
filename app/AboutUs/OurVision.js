@@ -1,6 +1,6 @@
 export default function Vision() {
     return (
-        <div className="sm:h-[380px] h-[300px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
+        <div className="sm:h-[380px] h-[380px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
             <div className="items-center justify-center text-center ">
                 <h1 className="px-4 mt-4 sm:mt-10 font-extrabold sm:text-4xl text-[24px] text-gray-600">OUR VISION</h1>
             </div>
