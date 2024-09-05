@@ -1,6 +1,6 @@
 export default function Vision() {
     return (
-        <div className="sm:h-[380px] h-[380px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
+        <div className="sm:h-[380px] md:h-[560px] lg:h-[400px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
             <div className="items-center justify-center text-center ">
                 <h1 className="px-4 mt-4 sm:mt-10 font-extrabold sm:text-4xl text-[24px] text-gray-600">OUR VISION</h1>
             </div>
@@ -15,7 +15,7 @@ export default function Vision() {
                     </defs>
                 </svg>
             </div>
-            <div className="sm:py-12 py-5 px-8 items-center justify-center text-center text-[14px] sm:text-[18px]">
+            <div className="sm:py-12 py-5 md:py-4 px-8 lg:py-8 items-center justify-center text-center text-[14px] sm:text-[18px]">
                 <p>
                     We are an Independent creative marketing agency with a vision to set new standards
                     and create history. We have developed as our customers have dependably requested more

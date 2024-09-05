@@ -105,8 +105,8 @@ const FeatureNum = {
 
 const FeatureTemplate = ({ path, title, desc }) => {
     return (
-        <div className="flex flex-row items-center justify-center space-x-4">
-            <div className="relative w-[112px] h-[112px] flex-shrink-0">
+        <div className="flex flex-row items-center justify-center space-x-2">
+            <div className="mt-6 relative w-[112px] h-[112px] flex-shrink-0">
             <svg
                     className="absolute top-0 left-0"
                     width="112"
