@@ -29,8 +29,8 @@ function Hero() {
               className="block sm:hidden"
             />
           </div>
-          <div className="ml-12 col-span-1 hidden sm:block">
-            <svg width="2" height="317" viewBox="0 5 2 317" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="ml-[15%] col-span-1 hidden sm:block">
+            <svg width="2" height="310" viewBox="0 5 2 310" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.6875 0.99707L0.6875 316.002" stroke="black" stroke-linecap="round" />
             </svg>
           </div>

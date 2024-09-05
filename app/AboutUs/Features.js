@@ -105,9 +105,9 @@ const FeatureNum = {
 
 const FeatureTemplate = ({ path, title, desc }) => {
     return (
-        <div className="flex items-center justify-center">
-            <div className="relative w-[112px] h-[112px]">
-                <svg
+        <div className="flex flex-row items-center justify-center space-x-4">
+            <div className="relative w-[112px] h-[112px] flex-shrink-0">
+            <svg
                     className="absolute top-0 left-0"
                     width="112"
                     height="112"
@@ -126,7 +126,7 @@ const FeatureTemplate = ({ path, title, desc }) => {
                             shape-rendering="crispEdges"
                         />
                         <path
-                            d={path} // Dynamic path
+                            d={path}
                             fill="white"
                         />
                     </g>
@@ -181,10 +181,97 @@ const FeatureTemplate = ({ path, title, desc }) => {
                     </defs>
                 </svg>
             </div>
-            <div className="mt-[-6%] flex flex-col justify-center max-w-[268px]">
+            <div className="flex flex-col justify-center max-w-[268px]">
                 <p className="text-lg font-bold">{title}</p>
                 <p className="text-xs text-gray-500 mt-2">{desc}</p>
             </div>
         </div>
     );
 };
+
+
+// const FeatureTemplate = ({ path, title, desc }) => {
+//     return (
+//         <div className="flex flex-row items-center justify-center">
+//             <div className="relative w-[112px] h-[112px]">
+//                 <svg
+//                     className="absolute top-0 left-0"
+//                     width="112"
+//                     height="112"
+//                     viewBox="0 0 113 112"
+//                     fill="none"
+//                     xmlns="http://www.w3.org/2000/svg"
+//                 >
+//                     <g filter="url(#filter0_d_325_398)">
+//                         <rect
+//                             x="34.5"
+//                             y="6"
+//                             width="72"
+//                             height="72"
+//                             rx="36"
+//                             fill="url(#paint0_linear_325_398)"
+//                             shape-rendering="crispEdges"
+//                         />
+//                         <path
+//                             d={path} // Dynamic path
+//                             fill="white"
+//                         />
+//                     </g>
+//                     <defs>
+//                         <filter
+//                             id="filter0_d_325_398"
+//                             x="0.5"
+//                             y="0"
+//                             width="112"
+//                             height="112"
+//                             filterUnits="userSpaceOnUse"
+//                             color-interpolation-filters="sRGB"
+//                         >
+//                             <feFlood flood-opacity="0" result="BackgroundImageFix" />
+//                             <feColorMatrix
+//                                 in="SourceAlpha"
+//                                 type="matrix"
+//                                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+//                                 result="hardAlpha"
+//                             />
+//                             <feOffset dx="-14" dy="14" />
+//                             <feGaussianBlur stdDeviation="10" />
+//                             <feComposite in2="hardAlpha" operator="out" />
+//                             <feColorMatrix
+//                                 type="matrix"
+//                                 values="0 0 0 0 0.984314 0 0 0 0 0.360784 0 0 0 0 0.505882 0 0 0 0.25 0"
+//                             />
+//                             <feBlend
+//                                 mode="normal"
+//                                 in2="BackgroundImageFix"
+//                                 result="effect1_dropShadow_325_398"
+//                             />
+//                             <feBlend
+//                                 mode="normal"
+//                                 in="SourceGraphic"
+//                                 in2="effect1_dropShadow_325_398"
+//                                 result="shape"
+//                             />
+//                         </filter>
+//                         <linearGradient
+//                             id="paint0_linear_325_398"
+//                             x1="70.5"
+//                             y1="6"
+//                             x2="70.5"
+//                             y2="78"
+//                             gradientUnits="userSpaceOnUse"
+//                         >
+//                             <stop stop-color="#FF0000" />
+//                             <stop offset="0.5" stop-color="#EE70DA" />
+//                             <stop offset="1" stop-color="#6E68ED" />
+//                         </linearGradient>
+//                     </defs>
+//                 </svg>
+//             </div>
+//             <div className=" mt-[-6%] flex flex-col justify-center max-w-[268px]">
+//                 <p className="text-lg font-bold">{title}</p>
+//                 <p className="text-xs text-gray-500 mt-2">{desc}</p>
+//             </div>
+//         </div>
+//     );
+// };
