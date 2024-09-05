@@ -1,6 +1,6 @@
 export default function Mission() {
     return (
-        <div className="sm:h-[380px] h-[380px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
+        <div className="sm:h-[380px] md:h-[560px] lg:h-[400px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
             <div className="items-center justify-center text-center">
                 <h1 className="px-4 mt-4 sm:mt-10 font-extrabold sm:text-4xl text-[24px] text-gray-600">OUR MISSION</h1>
             </div>
@@ -15,7 +15,7 @@ export default function Mission() {
                     </defs>
                 </svg>
             </div>
-            <div className="sm:py-12 py-5 px-8 items-center justify-center text-center text-[14px] sm:text-[18px]">
+            <div className="sm:py-12 py-5 md:py-8 lg:py-14 px-8 align-middle items-center justify-center text-center text-[14px] sm:text-[18px]">
                 <p>
                     To ensure long-term success for our companies, we strive diligently to combine
                     the best of digital and traditional marketing strategies. We will accomplish this
