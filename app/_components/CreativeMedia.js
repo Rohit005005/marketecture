@@ -10,9 +10,10 @@ export default function CreativeMedia() {
                         Creative Media
                     </h1>
                     <div className="text-[20px] py-10 font-[400] leading-8">
-                        Our creative media isn’t just about aesthetics; it’s about strategic vision.
-                        We blend imagination with purpose, steering your brand’s innovative endeavours
-                        towards impactful outcomes.
+                        Our creative media goes beyond aesthetics, focusing on a strategic approach. We merge
+                        imagination with intent, guiding your brand’s innovation toward meaningful results and
+                        success. By combining creativity with purpose, we help shape impactful solutions that align
+                        with your brand's vision and goals.
                     </div>
                 </div>
                 <div className="w-[633px] flex flex-col items-center justify-center gap-6 max-w-full">
