@@ -9,9 +9,9 @@ export default function Marketing() {
                         Marketing
                     </h1>
                     <div className="text-[20px] py-10 font-[400] leading-8">
-                        Our data-driven approach, combined with creative ingenuity,
-                        allows us to tailor strategies that resonate with your target audience,
-                        driving engagement, conversion, and long-term brand loyalty.
+                        Our method blends data analysis with creative insight to craft personalized strategies that
+                        captivate your target audience, enhancing engagement, boosting conversions, and fostering
+                        enduring brand loyalty.
                     </div>
                 </div>
                 <div className="w-[633px] flex flex-col items-center justify-center gap-6 max-w-full">

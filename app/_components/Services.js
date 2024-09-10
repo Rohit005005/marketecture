@@ -10,10 +10,11 @@ export default function Services() {
         <div className="w-[633px] flex flex-col items-start justify-start gap-6 max-w-full">
           <h1 className="text-[40px] py-08 font-[700] italic">Branding</h1>
           <div className="text-[20px] py-10 font-[400] leading-8">
-            Our holistic branding solutions such as strategy, language and
-            visualization not only ensure that your brand stands out amidst
-            the noise but also resonates deeply with your audience thus
-            touching ensuring connection.
+          Our comprehensive branding solutions—encompassing strategy, language, and
+          visualization—help your brand not only rise above the noise but also create meaningful
+          connections with your audience. By resonating deeply, we ensure your brand captivates
+          attention while fostering lasting engagement and emotional connection.
+
           </div>
         </div>
       </div>

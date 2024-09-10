@@ -10,9 +10,9 @@ export default function Technology() {
                         Technology
                     </h1>
                     <div className="text-[20px] py-10 font-[400] leading-8">
-                        Innovation is at the core of our technological solutions.
-                        We leverage cutting-edge technologies to architect and enhance your digital ecosystem,
-                        ensuring seamless experiences across all touchpoints, from UI/UX Design to app development.
+                        At the heart of our tech solutions lies innovation. We harness state-of-the-art technologies to
+                        design and refine your digital environment, guaranteeing smooth interactions at every
+                        touchpoint, including UI/UX design and app development.
                     </div>
                 </div>
                 <div className="w-[633px] flex flex-col items-center justify-center gap-6 max-w-full">
