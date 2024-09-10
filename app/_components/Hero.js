@@ -33,9 +33,9 @@ function Hero() {
             </div>
           </div>
           <div className="w-[300px] sm:w-[350px] h-[300px] sm:h-[350px] flex justify-center items-center rounded-full bg-[url('../public/girlbg.png')] bg-no-repeat bg-cover bg-center">
-            <div className="hidden sm:block w-[231px] h-[248px] relative ">
+            <div className="hidden sm:block w-[231px] h-[248px] relative border">
               <Image
-                src={"/girl.png"}
+                src={"/boy.png"}
                 width={900}
                 height={100}
                 className="p-5"
@@ -73,8 +73,8 @@ function Hero() {
             </div>
             <div className="block sm:hidden w-[231px] h-[248px] relative">
               <Image
-                src={"/girl.png"}
-                width={200}
+                src={"/boy.png"}
+                width={700}
                 height={100}
                 className="p-5 m-auto"
               />
