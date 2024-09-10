@@ -16,12 +16,12 @@ function Hero() {
             </h1>
             <div class="w-max">
               <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black my-5 sm:my-10 pr-3 sm:pr-10 text-[20px] sm:text-[40px] font-[700]">
-                improve your conversions
+                Structure Your Market
               </h1>
             </div>
             <h1 className="text-[15px] sm:text-[20px] py-5 sm:py-10 font-[400]">
-              We build, grow and help you scale by bringing the best digital
-              marketing initiatives that aligns with your brand’s mission.
+              We build, grow and help you structure your business to
+              increase visibility and sales.
             </h1>
             <div className="flex gap-5 sm:gap-10 items-center">
               <button className="px-5 sm:px-8 text-[13px] sm:text-[20px] font-[600] py-2 bg-[#F5DCD5] rounded-full">
