@@ -13,12 +13,10 @@ function GroupPhotos() {
       </div>
       <div className="flex text-center w-[98%] sm:w-[60%] mt-5 sm:mt-10">
         <p className="text-[12px] sm:text-[20px] font-[400]">
-          Through our involvement, we've been honored to garner recognition for
-          our efforts, earning accolades in the form of awards while witnessing
-          our CEO imparting insightful expertise as a keynote speaker on
-          prestigious platforms. These experiences have enriched us, allowing us
-          to connect with fellow professionals and celebrate collective
-          successes.
+          Through our participation, we’ve had the privilege of being acknowledged for our
+          contributions, receiving honours through various awards. These moments have deeply
+          enriched us, enabling us to network with other professionals and celebrate shared
+          achievements.
         </p>
       </div>
       <div className="hidden sm:flex gap-10 mt-10">
