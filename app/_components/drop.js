@@ -89,13 +89,16 @@ const BouncingImages = () => {
 
     // Create image bodies
     const images = [
-      "/comp1.png",
-      "/comp2.png",
-      "/comp3.png",
-      "/comp4.png",
-      "/comp5.png",
-      "/comp6.png",
-      "/comp7.png",
+      "/logo/comp1.png",
+      "/logo/comp2.png",
+      "/logo/comp3.png",
+      "/logo/comp4.png",
+      "/logo/comp5.png",
+      "/logo/comp6.png",
+      "/logo/comp7.png",
+      "/logo/comp8.png",
+      "/logo/comp9.png",
+      "/logo/comp10.png",
     ];
 
     const imageBodies = images.map((image) => {
@@ -107,8 +110,8 @@ const BouncingImages = () => {
         render: {
           sprite: {
             texture: image,
-            xScale: 0.5,
-            yScale: 0.5,
+            xScale: 0.2,
+            yScale: 0.2,
           },
         },
       });
