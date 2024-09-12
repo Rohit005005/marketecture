@@ -104,18 +104,28 @@ const BouncingImages = () => {
     const imageBodies = images.map((image) => {
       const x = Math.random() * (render.options.width - 100) + 50;
       const y = Math.random() * (render.options.height - 100) + 50;
+      // Detect if the screen width is less than 640px (mobile size)
+      const isMobile = window.innerWidth < 800;
 
-      return Matter.Bodies.rectangle(x, y, 100, 100, {
-        restitution: 1.1,
+
+      const radius = isMobile ? 37.5 : 58; // Set radius for the circle
+    
+      
+      
+      // Set scale based on screen size
+      const scale = isMobile ? 0.11 : 0.17;
+    
+      return Matter.Bodies.circle(x, y, radius, {
+        restitution: 1,
         render: {
           sprite: {
             texture: image,
-            xScale: 0.2,
-            yScale: 0.2,
+            xScale: scale, // Set the scale based on screen size
+            yScale: scale, // Same for both x and y to keep it circular
           },
         },
       });
-    });
+    });    
 
     Matter.World.add(world, imageBodies);
 
