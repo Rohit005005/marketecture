@@ -12,6 +12,7 @@
     "framer-motion": "^11.3.24",
     "lottie-web": "^5.12.2",
     "lucide-react": "^0.435.0",
+    "marketecture": "file:",
     "matter-js": "^0.20.0",
     "next": "14.2.5",
     "react": "^18",
