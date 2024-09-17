@@ -1,9 +1,9 @@
-export default function Vision() {
+export default function PresentDay() {
   return (
     <div className="sm:h-[380px] md:h-[560px] lg:h-[400px] bg-[url('../public/bgfull.png')] bg-cover bg-center drop-shadow-2xl rounded-2xl">
       <div className="items-center justify-center text-center ">
         <h1 className="px-4 mt-4 sm:mt-10 font-extrabold sm:text-4xl text-[24px] text-gray-600">
-          2021: The Inception
+          Present Day: A Comprehensive Business Solutions Provider
         </h1>
       </div>
       <div className="pt-4 px-4">
@@ -37,12 +37,14 @@ export default function Vision() {
       </div>
       <div className="sm:py-12 py-5 md:py-4 px-8 lg:py-8 items-center justify-center text-center text-[14px] sm:text-[18px]">
         <p>
-          Marketecture was born out of a simple idea: to provide exceptional
-          marketing services that drive results. Starting as a one-person
-          operation, Pranab (founder) dedicated himself to understanding the
-          unique challenges faced by businesses in various industries. Through
-          strategic marketing initiatives, he helped clients boost their brand
-          visibility and achieve significant growth.
+          Today, Marketecture stands as a testament to what dedication and
+          vision can achieve. We serve clients across various domains, including
+          IT, dealerships, restaurants, transport, and real estate. Our
+          expertise isn't limited to just marketing; we handle everything from
+          strategic marketing and sales to designing and furnishing interiors.
+          Whether you are looking for a new apartment or need a cloud kitchen,
+          office space setup, or any other commercial space arrangement,
+          Marketecture is your go-to partner.
         </p>
       </div>
     </div>

@@ -8,7 +8,6 @@ export default function ContactUs() {
     return (
         <div className="overflow-x-hidden">
             <Hero />
-            <div className="border-t border-gray-400 hidden sm:block"></div>
             <Features />
             <AboutTestimonies />
             <ContactCards />
