@@ -1,5 +1,12 @@
 import React from "react";
 import Navbar from "../_components/Navbar";
+import HoverTile1 from "./HoverTile1";
+import HoverTile2 from "./HoverTile2";
+import HoverTile3 from "./HoverTile3";
+import HoverTile4 from "./HoverTile4";
+import HoverTile5 from "./HoverTile5";
+import HoverTile6 from "./HoverTile6";
+
 function Hero() {
 
     return (
@@ -14,11 +21,26 @@ function Hero() {
                         <div className="text-black text-4xl font-bold">
                             <hi>We Can offer You</hi>
                         </div>
-                        <div className="md:text-4xl text-black font-bold flex justify-center text-[15px] whitespace-nowrap ">
+                        <div className="text-4xl text-black font-bold flex justify-center text-[15px] whitespace-nowrap ">
                             <h1>The Best</h1>
                         </div>
                     </div>
                 </div>
+                <div className="flex flex-col items-center justify-center py-12 space-y-12 md:space-y-0">
+                    <div className="flex flex-col md:flex-row items-center justify-center space-x-24">
+                        <HoverTile1 />
+                        <HoverTile2 />
+                    </div>
+                    <div className="flex flex-col md:flex-row items-center justify-center space-x-24 py-12">
+                        <HoverTile3 />
+                        <HoverTile4 />
+                    </div>
+                    <div className="flex flex-col md:flex-row items-center justify-center space-x-24 mb-12">
+                        <HoverTile5 />
+                        <HoverTile6 />
+                    </div>
+                </div>
+
             </div>
         </div>
     );
