@@ -6,7 +6,7 @@ import { CircleArrowLeft } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 function NavbarMobile({ onClose }) {
-  const path=usePathname();
+  const path = usePathname();
 
   return (
     <div className="fixed inset-0 bg-[url('../public/bgfull.png')] z-50 ">
@@ -19,17 +19,19 @@ function NavbarMobile({ onClose }) {
         </div>
       </div>
       <div className="flex flex-col mt-5 ">
-      <Link href="/">
-        <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path=="/" && `font-[800]`}`}>
-          Home
-        </div>
+        <Link href="/">
+          <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path == "/" && `font-[800]`}`}>
+            Home
+          </div>
         </Link>
         <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
           Case Studies
         </div>
-        <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
-          Services
-        </div>
+        <Link href="/Services">
+          <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
+            Services
+          </div>
+        </Link>
         <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
           Blog
         </div>
@@ -37,14 +39,14 @@ function NavbarMobile({ onClose }) {
           Clients
         </div>
         <Link href="/AboutUs">
-        <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path=="/AboutUs" && `font-[800]`}`}>
-          About Us
-        </div>
+          <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path == "/AboutUs" && `font-[800]`}`}>
+            About Us
+          </div>
         </Link>
         <Link href="/ContactUs">
-        <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path=="/ContactUs" && `font-[800]`}`}>
-          Contact
-        </div>
+          <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path == "/ContactUs" && `font-[800]`}`}>
+            Contact
+          </div>
         </Link>
       </div>
     </div>
@@ -54,7 +56,7 @@ function NavbarMobile({ onClose }) {
 function Navbar() {
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
 
-  const path=usePathname();
+  const path = usePathname();
 
   const handleMobileNavToggle = () => {
     setMobileNavOpen(!isMobileNavOpen);
@@ -71,7 +73,9 @@ function Navbar() {
             <p className={`text-black  text-[16px] ${path == "/" && `font-[700]`}`}>Home</p>
           </Link>
           <p className="text-black  text-[16px]">Case Studies</p>
-          <p className="text-black  text-[16px]">Services</p>
+          <Link href={"/Services"}>
+            <p className="text-black  text-[16px]">Services</p>
+          </Link>
           <p className="text-black  text-[16px]">Blog</p>
           <p className="text-black  text-[16px]">Clients</p>
           <Link href={"/AboutUs"}>
