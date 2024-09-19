@@ -24,20 +24,20 @@ function NavbarMobile({ onClose }) {
             Home
           </div>
         </Link>
-        <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
+        {/* <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
           Case Studies
-        </div>
+        </div> */}
         <Link href="/Services">
-          <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
+          <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path == "/Services" && `font-[800]`}`}>
             Services
           </div>
         </Link>
-        <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
+        {/* <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
           Blog
-        </div>
-        <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
+        </div> */}
+        {/* <div className="text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba]">
           Clients
-        </div>
+        </div> */}
         <Link href="/AboutUs">
           <div className={`text-[24px] font-[500] mb-4 text-center border-b-[1px] border-[#9a9898ba] ${path == "/AboutUs" && `font-[800]`}`}>
             About Us
@@ -72,12 +72,12 @@ function Navbar() {
           <Link href="/">
             <p className={`text-black  text-[16px] ${path == "/" && `font-[700]`}`}>Home</p>
           </Link>
-          <p className="text-black  text-[16px]">Case Studies</p>
+          {/* <p className="text-black  text-[16px]">Case Studies</p> */}
           <Link href={"/Services"}>
-            <p className="text-black  text-[16px]">Services</p>
+            <p className={`text-black  text-[16px] ${path == "/Services" && `font-[700]`}`}>Services</p>
           </Link>
-          <p className="text-black  text-[16px]">Blog</p>
-          <p className="text-black  text-[16px]">Clients</p>
+          {/* <p className="text-black  text-[16px]">Blog</p> */}
+          {/* <p className="text-black  text-[16px]">Clients</p> */}
           <Link href={"/AboutUs"}>
             <p className={`text-black  text-[16px] ${path == "/AboutUs" && `font-[700]`}`}>About Us</p>
           </Link>
