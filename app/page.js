@@ -26,8 +26,8 @@ export default function Home() {
       <BouncingImages />
       <WorkProcess />
       <GroupPhotos />
-      <Testimonies />
-      <div className="border-t border-gray-400"></div>
+      {/* <Testimonies /> */}
+      <div className="mt-12 border-t border-gray-400"></div>
       <MarketingComponent />
       <Footer />
     </div>
