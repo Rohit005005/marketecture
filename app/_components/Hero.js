@@ -2,6 +2,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
 
@@ -40,36 +41,42 @@ function Hero() {
                 height={100}
                 className="p-5"
               />
-              <div
-              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[140px]">
-                 <p className="text-[16px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">   
+              <Link href="./Services"><div
+                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[140px]">
+                <p className="text-[16px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">
                   Lead Generation
                 </p>
               </div>
-              <div
-              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[240px] translate-x-[130px]">
-                 <p className="text-[16px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">   
+              </Link>
+              <Link href={"./Services"}><div
+                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[240px] translate-x-[130px]">
+                <p className="text-[16px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">
                   Creative Marketing
                 </p>
               </div>
-              <div
-              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[150px] -translate-x-[180px]">
-                 <p className="text-[16px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">   
-                  Paid Marketing
-                </p>
-              </div>
-              <div
-              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[90px] translate-x-[150px]">
-                 <p className="text-[16px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">   
+              </Link>
+              <Link href={"./Services"}>
+                <div
+                  className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[150px] -translate-x-[180px]">
+                  <p className="text-[16px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">
+                    Paid Marketing
+                  </p>
+                </div>
+              </Link>
+              <Link href={"./Services"}> <div
+                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[90px] translate-x-[150px]">
+                <p className="text-[16px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">
                   SEO Services
                 </p>
               </div>
-              <div
-              className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[30px] -translate-x-[180px]">
-                 <p className="text-[16px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">   
+              </Link>
+              <Link href={"./Services"}><div
+                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[30px] -translate-x-[180px]">
+                <p className="text-[16px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">
                   Content Marketing
                 </p>
               </div>
+              </Link>
             </div>
             <div className="block sm:hidden w-[231px] h-[248px] relative">
               <Image
@@ -78,36 +85,41 @@ function Hero() {
                 height={100}
                 className="p-5 m-auto"
               />
-              <div
-              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[50px]">
-                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">   
+              <Link href={"./Services"}><div
+                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[50px]">
+                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">
                   Lead Generation
                 </p>
               </div>
-              <div
-              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[200px] translate-x-[140px]">
-                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">   
+              </Link>
+              <Link href={"./Services"}><div
+                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[200px] translate-x-[140px]">
+                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">
                   Creative Marketing
                 </p>
               </div>
-              <div
-              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[160px] -translate-x-[80px]">
-                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">   
+              </Link>
+              <Link href={"./Services"}><div
+                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[160px] -translate-x-[80px]">
+                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">
                   Paid Marketing
                 </p>
               </div>
-              <div
-              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[100px] translate-x-[140px]">
-                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">   
+              </Link>
+              <Link href={"./Services"}><div
+                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[100px] translate-x-[140px]">
+                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">
                   SEO Services
                 </p>
               </div>
-              <div
-              className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[40px] -translate-x-[70px]">
-                 <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">   
+              </Link>
+              <Link href={"./Services"}><div
+                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[40px] -translate-x-[70px]">
+                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">
                   Content Marketing
                 </p>
               </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -122,7 +134,7 @@ function Hero() {
             <div className="flex flex-col whitespace-nowrap items-center justify-center sm:justify-start sm:items-start">
               <h1 className="text-[28px] sm:text-[48px] font-[600]">180+</h1>
               <h1 className="text-[15px] sm:text-[20px] font-[500]">
-                Successfull Projects
+                Successful Projects
               </h1>
             </div>
           </div>
