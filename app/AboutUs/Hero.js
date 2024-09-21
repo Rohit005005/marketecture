@@ -9,12 +9,12 @@ function Hero() {
     <div>
       <Navbar />
       <div>
-        <div className=" text-center">
+        {/* <div className=" text-center">
           <h1 className="sm:ml-24 py-3 sm:py-10 sm:text-4xl text-[28px] font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text inline-block text-transparent">
             ABOUT US
           </h1>
-        </div>
-        <div className="sm:ml-24 grid grid-cols-1 md:grid-cols-10 ">
+        </div> */}
+        <div className="sm:ml-24 mt-12 grid grid-cols-1 md:grid-cols-10 ">
           <div className=" col-span-2  flex justify-center items-center">
             <Image
               src={"/logo-about-us.png"}

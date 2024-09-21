@@ -13,10 +13,10 @@ function Hero() {
         <div className="">
             <Navbar />
             <div>
-                <div className="text-center flex justify-center flex-col items-center">
-                    <div className="text-center ">
+                <div className="text-center mt-8 flex justify-center flex-col items-center">
+                    {/* <div className="text-center ">
                         <h1 className=" mt-20  text-[38px] text-[28px] font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text inline-block text-transparent">OUR SERVICES</h1>
-                    </div>
+                    </div> */}
                     <div className="py-6">
                         <div className="text-black text-4xl font-bold">
                             <hi>We Can offer You</hi>
