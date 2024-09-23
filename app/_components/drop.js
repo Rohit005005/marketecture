@@ -189,7 +189,7 @@ const BouncingImages = () => {
       <ReadyToBuild />
       <div
         ref={sceneRef}
-        className="w-full h-[60vh] sm:h-[70vh] border-none p-0 m-0 bg-transparent"
+        className="w-full h-[40vh] sm:h-[70vh] border-none p-0 m-0 bg-transparent"
       />
     </div>
   );
