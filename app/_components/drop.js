@@ -45,44 +45,28 @@ const BouncingImages = () => {
         0 - wallThickness / 2,
         render.options.width,
         wallThickness,
-        { isStatic: true,
-          render: {
-            visible: false, // Make the wall invisible
-          },
-         }
+        { isStatic: true, render: { visible: false } }
       ),
       Matter.Bodies.rectangle(
         render.options.width / 2,
         render.options.height + wallThickness / 2,
         render.options.width,
         wallThickness,
-        { isStatic: true,
-          render: {
-            visible: false, // Make the wall invisible
-          },
-         }
+        { isStatic: true, render: { visible: false } }
       ),
       Matter.Bodies.rectangle(
         0 - wallThickness / 2,
         render.options.height / 2,
         wallThickness,
         render.options.height,
-        { isStatic: true,
-          render: {
-            visible: false, // Make the wall invisible
-          },
-         }
+        { isStatic: true, render: { visible: false } }
       ),
       Matter.Bodies.rectangle(
         render.options.width + wallThickness / 2,
         render.options.height / 2,
         wallThickness,
         render.options.height,
-        { isStatic: true,
-          render: {
-            visible: false, // Make the wall invisible
-          },
-         }
+        { isStatic: true, render: { visible: false } }
       ),
     ];
     Matter.World.add(world, walls);
@@ -104,30 +88,55 @@ const BouncingImages = () => {
     const imageBodies = images.map((image) => {
       const x = Math.random() * (render.options.width - 100) + 50;
       const y = Math.random() * (render.options.height - 100) + 50;
-      // Detect if the screen width is less than 640px (mobile size)
       const isMobile = window.innerWidth < 800;
 
-
-      const radius = isMobile ? 37.5 : 58; // Set radius for the circle
-    
-      
-      
-      // Set scale based on screen size
+      const radius = isMobile ? 37.5 : 58;
       const scale = isMobile ? 0.11 : 0.17;
-    
+
       return Matter.Bodies.circle(x, y, radius, {
         restitution: 1,
+        friction: 0,
+        frictionAir: 0.02, // Add some air resistance to slow down fast movement
         render: {
           sprite: {
             texture: image,
-            xScale: scale, // Set the scale based on screen size
-            yScale: scale, // Same for both x and y to keep it circular
+            xScale: scale,
+            yScale: scale,
           },
         },
       });
-    });    
+    });
 
     Matter.World.add(world, imageBodies);
+
+    // Limit velocity to prevent disappearing on fast shakes
+    Matter.Events.on(engine, "beforeUpdate", () => {
+      imageBodies.forEach((body) => {
+        // Limit maximum velocity
+        const maxVelocity = 10;
+        if (body.velocity.x > maxVelocity) {
+          Matter.Body.setVelocity(body, { x: maxVelocity, y: body.velocity.y });
+        }
+        if (body.velocity.x < -maxVelocity) {
+          Matter.Body.setVelocity(body, { x: -maxVelocity, y: body.velocity.y });
+        }
+        if (body.velocity.y > maxVelocity) {
+          Matter.Body.setVelocity(body, { x: body.velocity.x, y: maxVelocity });
+        }
+        if (body.velocity.y < -maxVelocity) {
+          Matter.Body.setVelocity(body, { x: body.velocity.x, y: -maxVelocity });
+        }
+
+        // Ensure the bodies stay inside the canvas boundaries
+        const padding = 10;
+        if (body.position.x < -padding || body.position.x > render.options.width + padding) {
+          Matter.Body.setPosition(body, { x: render.options.width / 2, y: body.position.y });
+        }
+        if (body.position.y < -padding || body.position.y > render.options.height + padding) {
+          Matter.Body.setPosition(body, { x: body.position.x, y: render.options.height / 2 });
+        }
+      });
+    });
 
     // Enable mouse control (for dragging)
     const mouse = Matter.Mouse.create(render.canvas);
@@ -135,16 +144,14 @@ const BouncingImages = () => {
       mouse: mouse,
       constraint: {
         stiffness: 0.2,
-        render: {
-          visible: false,
-        },
+        render: { visible: false },
       },
     });
     Matter.World.add(world, mouseConstraint);
 
     // Remove event listeners that block scrolling
-    mouse.element.removeEventListener('wheel', mouse.mousewheel);
-    mouse.element.removeEventListener('DOMMouseScroll', mouse.mousewheel);
+    mouse.element.removeEventListener("wheel", mouse.mousewheel);
+    mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
 
     // Intersection Observer to trigger animation on scroll
     const observer = new IntersectionObserver(
@@ -156,9 +163,7 @@ const BouncingImages = () => {
           observer.disconnect(); // Stop observing after animation starts
         }
       },
-      {
-        threshold: 0.1, // Trigger when 10% of the section is visible
-      }
+      { threshold: 0.1 }
     );
 
     if (sceneRef.current) {
