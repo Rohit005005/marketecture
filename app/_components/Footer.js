@@ -1,38 +1,39 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
   const footervectors1 = [
     {
       img: "/footervector1.png",
-      name: "Lead Generation",
+      name: "Sales Execution",
     },
     {
       img: "/footervector2.png",
-      name: "Paid Media",
+      name: "Strategic Marketing",
     },
     {
       img: "/footervector3.png",
-      name: "Search Engine Optimisation",
+      name: "Interior Design and Furnishing",
     },
     {
       img: "/footervector4.png",
-      name: "Creative Design",
+      name: "Cloud Kitchen",
     },
     {
       img: "/footervector5.png",
-      name: "Creative Marketing",
+      name: "Office Space Setup",
     },
   ];
 
   const footervectors2 = [
     {
       img: "/footervector6.png",
-      name: "Performance Marketing",
+      name: "Real Estate",
     },
     {
       img: "/footervector7.png",
-      name: "Influencer Marketing",
+      name: "Office Space Setup",
     },
     {
       img: "/footervector8.png",
@@ -66,14 +67,36 @@ function Footer() {
         <div className="flex gap-20">
           <div className="flex flex-col gap-8 sm:gap-10 whitespace-nowrap">
             <h1 className="text-[20px] font-[700] text-white">Solutions</h1>
-            <h1 className="text-[16px] font-[400] text-[#BBBBBB]">Branding</h1>
-            <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
-              Creative Media
-            </h1>
-            <h1 className="text-[16px] font-[400] text-[#BBBBBB]">Marketing</h1>
-            <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
-              Technology
-            </h1>
+            <Link href={"/Services"}>
+              <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
+                Sales Execution
+              </h1>
+            </Link>
+            <Link href={"/Services"}>
+              <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
+                Strategic Marketing
+              </h1>
+            </Link>
+            <Link href={"/Services"}>
+              <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
+                Interior Design and Furnishing
+              </h1>
+            </Link>
+            <Link href={"/Services"}>
+              <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
+                Cloud Kitchen and Office Space Setup
+              </h1>
+            </Link>
+            <Link href={"/Services"}>
+              <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
+                Materials Procurement
+              </h1>
+            </Link>
+            <Link href={"/Services"}>
+              <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
+                Real Estate
+              </h1>
+            </Link>
           </div>
           <div className="flex flex-col gap-8 sm:gap-10 whitespace-nowrap">
             <h1 className="text-[20px] font-[700] text-white">Company</h1>
@@ -100,7 +123,9 @@ function Footer() {
             <strong>enqury from here</strong>
           </div>
           <div className="flex flex-col">
-            <h1 className="text-[20px] font-[700] text-white sm:text-left text-center">Follow us on</h1>
+            <h1 className="text-[20px] font-[700] text-white sm:text-left text-center">
+              Follow us on
+            </h1>
             <div className="hidden sm:flex gap-5 justify-center sm:justify-start items-center mt-5">
               <div className=" p-2 rounded-full flex justify-center items-center bg-[#FEC63E]">
                 <Image src={"/linkedinlogo.png"} height={100} width={20} />
@@ -129,8 +154,8 @@ function Footer() {
       <hr className="my-10 border-[#BBBBBB]" />
       <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 justify-center items-center">
         {footervectors1.map((item, index) => (
-          <div className="flex gap-4" key={index}>
-            <div className="flex justify-center items-center">
+          <div className="flex gap-4 whitespace-nowrap" key={index}>
+            <div className="flex justify-center items-center w-[30px] h-[30px]">
               <Image src={item.img} height={20} width={20} />
             </div>
             <p className="text-[16px] font-[400] text-[#BBBBBB]">{item.name}</p>
@@ -139,8 +164,8 @@ function Footer() {
       </div>
       <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 justify-center items-center mt-10 sm:mb-0 mb-10">
         {footervectors2.map((item, index) => (
-          <div className="flex gap-4" key={index}>
-            <div className="flex justify-center items-center">
+          <div className="flex gap-4 whitespace-nowrap" key={index}>
+            <div className="flex justify-center items-center w-[30px] h-[30px]">
               <Image src={item.img} height={20} width={20} />
             </div>
             <p className="text-[16px] font-[400] text-[#BBBBBB]">{item.name}</p>
