@@ -152,9 +152,9 @@ function Footer() {
         </div>
       </div>
       <hr className="my-10 border-[#BBBBBB]" />
-      <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 justify-center items-center">
+      <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 justify-center items-center">
         {footervectors1.map((item, index) => (
-          <div className="flex gap-4 whitespace-nowrap" key={index}>
+          <div className="flex gap-2 whitespace-nowrap" key={index}>
             <div className="flex justify-center items-center w-[30px] h-[30px]">
               <Image src={item.img} height={20} width={20} />
             </div>
@@ -162,9 +162,9 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 justify-center items-center mt-10 sm:mb-0 mb-10">
+      <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 justify-center items-center mt-10 sm:mb-0 mb-10">
         {footervectors2.map((item, index) => (
-          <div className="flex gap-4 whitespace-nowrap" key={index}>
+          <div className="flex gap-2 whitespace-nowrap" key={index}>
             <div className="flex justify-center items-center w-[30px] h-[30px]">
               <Image src={item.img} height={20} width={20} />
             </div>
