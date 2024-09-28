@@ -9,9 +9,9 @@ export default function ContactUs() {
         <div className="overflow-x-hidden">
             <Hero />
             <Features />
-            <AboutTestimonies />
+            {/* <AboutTestimonies />
             <ContactCards />
-            <GetInTouch />
+            <GetInTouch /> */}
             <Footer />
         </div>
     );
