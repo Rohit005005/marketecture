@@ -6,6 +6,12 @@ import Marketing from "./Marketing";
 import Services from "./Services";
 import Technology from "./Technology";
 import Animation from "./animation";
+import SalesExecution from "./SalesExecution";
+import StrategicMarketing from "./StrategicMarketing";
+import InteriorDesignAndFurnishing from "./InteriorDesignAndFurnishing";
+import CloudKitchenAndOfficeSpaceSetup from "./CloudKitchenAndOfficeSpaceSetup";
+import MaterialsProcurement from "./MaterialsProcurement";
+import RealEstate from "./RealEstate";
 
 export default function FixedServicesLayout() {
     const [visibleComponent, setVisibleComponent] = useState(null);
@@ -14,6 +20,13 @@ export default function FixedServicesLayout() {
     const creativeMediaRef = useRef(null);
     const marketingRef = useRef(null);
     const technologyRef = useRef(null);
+    const salesExecutionRef = useRef(null);
+    const strategicMarketingRef = useRef(null);
+    const interiorDesignAndFurnishingRef = useRef(null);
+    const cloudKitchenAndOfficeSpaceSetupRef = useRef(null);
+    const materialsProcurementRef = useRef(null);
+    const realEstateRef = useRef(null);
+    
 
     useEffect(() => {
         const options = {
@@ -39,6 +52,24 @@ export default function FixedServicesLayout() {
         }
         if (technologyRef.current) {
             observer.observe(technologyRef.current);
+        }
+        if (salesExecutionRef.current) {
+            observer.observe(salesExecutionRef.current);
+        }
+        if (strategicMarketingRef.current) {
+            observer.observe(strategicMarketingRef.current);
+        }
+        if (interiorDesignAndFurnishingRef.current) {
+            observer.observe(interiorDesignAndFurnishingRef.current);
+        }
+        if (cloudKitchenAndOfficeSpaceSetupRef.current) {
+            observer.observe(cloudKitchenAndOfficeSpaceSetupRef.current);
+        }
+        if (materialsProcurementRef.current) {
+            observer.observe(materialsProcurementRef.current);
+        }
+        if (realEstateRef.current) {
+            observer.observe(realEstateRef.current);
         }
 
         return () => observer.disconnect();
@@ -84,6 +115,54 @@ export default function FixedServicesLayout() {
                         }`}
                 >
                     <Technology />
+                </div>
+                <div
+                    ref={salesExecutionRef}
+                    data-name="salesExecution"
+                    className={`transition-opacity duration-1000 ${visibleComponent === "salesExecution" ? "opacity-100" : "opacity-0"
+                        }`}
+                >
+                    <SalesExecution />
+                </div>
+                <div
+                    ref={strategicMarketingRef}
+                    data-name="strategicMarketing"
+                    className={`transition-opacity duration-1000 ${visibleComponent === "strategicMarketing" ? "opacity-100" : "opacity-0"
+                        }`}
+                >
+                    <StrategicMarketing />
+                </div>
+                <div
+                    ref={interiorDesignAndFurnishingRef}
+                    data-name="interiorDesignAndFurnishing"
+                    className={`transition-opacity duration-1000 ${visibleComponent === "interiorDesignAndFurnishing" ? "opacity-100" : "opacity-0"
+                        }`}
+                >
+                    <InteriorDesignAndFurnishing />
+                </div>
+                <div
+                    ref={cloudKitchenAndOfficeSpaceSetupRef}
+                    data-name="cloudKitchenAndOfficeSpaceSetup"
+                    className={`transition-opacity duration-1000 ${visibleComponent === "cloudKitchenAndOfficeSpaceSetup" ? "opacity-100" : "opacity-0"
+                        }`}
+                >
+                    <CloudKitchenAndOfficeSpaceSetup />
+                </div>
+                <div
+                    ref={materialsProcurementRef}
+                    data-name="materialProcurement"
+                    className={`transition-opacity duration-1000 ${visibleComponent === "materialProcurement" ? "opacity-100" : "opacity-0"
+                        }`}
+                >
+                    <MaterialsProcurement />
+                </div>
+                <div
+                    ref={realEstateRef}
+                    data-name="realEstate"
+                    className={`transition-opacity duration-1000 ${visibleComponent === "realEstate" ? "opacity-100" : "opacity-0"
+                        }`}
+                >
+                    <RealEstate />
                 </div>
             </div>
         </div>
