@@ -13,6 +13,7 @@ import Footer from "./_components/Footer";
 import MarketingComponent from "./_components/MarketingComponent";
 import FixedServicesLayout from "./_components/ServicesLayout";
 import BouncingImages from "./_components/drop";
+import ScrollImage from "./_components/ScrollImage";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Marketing />
       <Technology /> */}
       <BouncingImages />
+      <ScrollImage/>
       <WorkProcess />
       <GroupPhotos />
       {/* <Testimonies /> */}
