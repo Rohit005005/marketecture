@@ -15,7 +15,7 @@ const ScrollImage = () => {
     tl.fromTo(
       "#video",
       { scale: 0.6 },  // Initial scale
-      { scale: 0.8, duration: 1, transformOrigin: "bottom center" }  // End scale
+      { scale: 0.8, duration: 1, transformOrigin: "center center" }  // End scale
     );
 
     // Create the ScrollTrigger instance
@@ -23,7 +23,7 @@ const ScrollImage = () => {
       trigger: "#video-section",
       start: "top top",
       end: "+=200%",
-      pin: true,  // Pin the section
+      pin: true,  // Pin the section during scroll
       animation: tl,
       scrub: 0.78,  // Smoothly transition with scrolling
       pinSpacing: false,  // No extra space below the section
@@ -38,12 +38,12 @@ const ScrollImage = () => {
 
   return (
     <>
-      <section id="video-section" className="relative h-screen w-screen z-10">
+      <section id="video-section" className="relative h-screen w-screen z-10 overflow-hidden">
         <video
           id="video"
           src="/video.mp4"  // Replace with your video URL
           className="object-cover h-full w-full"
-          controls
+          controls  // Video controls like play/pause
           autoPlay
           muted
           loop
@@ -56,9 +56,9 @@ const ScrollImage = () => {
         </div>
       </section> */}
       <div className="spacer h-screen w-screen grid place-content-center relative">
-        <h2>anything else</h2>
+        <h2></h2>
         <span className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
-          Example By: Steven Stavrakis
+          
         </span>
       </div>
     </>
@@ -66,3 +66,4 @@ const ScrollImage = () => {
 };
 
 export default ScrollImage;
+
