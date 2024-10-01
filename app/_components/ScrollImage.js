@@ -15,7 +15,7 @@ const ScrollImage = () => {
     tl.fromTo(
       "#video",
       { scale: 0.6 },  // Initial scale
-      { scale: 1, duration: 1, transformOrigin: "bottom center" }  // End scale
+      { scale: 0.8, duration: 1, transformOrigin: "bottom center" }  // End scale
     );
 
     // Create the ScrollTrigger instance
