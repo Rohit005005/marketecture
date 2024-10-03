@@ -97,40 +97,40 @@ function GroupPhotos() {
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_1.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_2.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_3.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_4.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_5.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
         </ul>
@@ -142,40 +142,40 @@ function GroupPhotos() {
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_1.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_2.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_3.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_4.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_5.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
         </ul>
@@ -187,40 +187,40 @@ function GroupPhotos() {
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_1.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_2.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_3.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_4.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_5.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
         </ul>
@@ -232,40 +232,40 @@ function GroupPhotos() {
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_1.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_2.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_3.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_4.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
           <li>
             <Image
               className="w-32 h-32 sm:w-56 sm:h-56 rounded-xl"
               src={"/image_5.png"}
-              width={120}
-              height={100}
+              width={500}
+              height={500}
             />
           </li>
         </ul>
