@@ -113,14 +113,18 @@ function Footer() {
           <h1 className="text-[20px] font-[700] text-white">Contact</h1>
           <div className="text-[16px] font-[400] text-[#BBBBBB]">
             <p>Mail us</p>
-            <p>hello@Marketecture.com</p>
+            <Link href={"/ContactUs"}>
+              <p>hello@Marketecture.com</p>
+            </Link>
           </div>
           <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
             Business Enquiries
           </h1>
           <div className="text-[16px] font-[400] text-[#BBBBBB] whitespace-normal">
             <p>For any business enquiry, please fill up our</p>
-            <strong>enqury from here</strong>
+            <Link href={"/ContactUs"}>
+              <strong>enqury from here</strong>
+            </Link>
           </div>
           <div className="flex flex-col">
             <h1 className="text-[20px] font-[700] text-white sm:text-left text-center">

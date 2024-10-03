@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Hero() {
-
   return (
     <div className="overflow-x-hidden">
       <Navbar />
@@ -21,13 +20,15 @@ function Hero() {
               </h1>
             </div>
             <h1 className="text-[15px] sm:text-[20px] py-5 sm:py-10 font-[400]">
-              We build, grow and help you structure your business to
-              increase visibility and sales.
+              We build, grow and help you structure your business to increase
+              visibility and sales.
             </h1>
             <div className="flex gap-5 sm:gap-10 items-center">
-              <button className="px-5 sm:px-8 text-[13px] sm:text-[20px] font-[600] py-2 bg-[#F5DCD5] rounded-full">
-                Lets Talk
-              </button>
+              <Link href={"/ContactUs"}>
+                <button className="px-5 sm:px-8 text-[13px] sm:text-[20px] font-[600] py-2 bg-[#F5DCD5] rounded-full">
+                  Lets Talk
+                </button>
+              </Link>
               <h1 className="text-[14px] sm:text-[20px] font-[500]">
                 Read Success Stories
               </h1>
@@ -41,41 +42,41 @@ function Hero() {
                 height={100}
                 className="p-5"
               />
-              <Link href="./Services"><div
-                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[140px]">
-                <p className="text-[16px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">
-                  Lead Generation
-                </p>
-              </div>
-              </Link>
-              <Link href={"./Services"}><div
-                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[240px] translate-x-[130px]">
-                <p className="text-[16px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">
-                  Creative Marketing
-                </p>
-              </div>
+              <Link href="./Services">
+                <div className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[140px]">
+                  <p className="text-[16px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">
+                    Lead Generation
+                  </p>
+                </div>
               </Link>
               <Link href={"./Services"}>
-                <div
-                  className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[150px] -translate-x-[180px]">
+                <div className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[240px] translate-x-[130px]">
+                  <p className="text-[16px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">
+                    Creative Marketing
+                  </p>
+                </div>
+              </Link>
+              <Link href={"./Services"}>
+                <div className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[150px] -translate-x-[180px]">
                   <p className="text-[16px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">
                     Paid Marketing
                   </p>
                 </div>
               </Link>
-              <Link href={"./Services"}> <div
-                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[90px] translate-x-[150px]">
-                <p className="text-[16px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">
-                  SEO Services
-                </p>
-              </div>
+              <Link href={"./Services"}>
+                {" "}
+                <div className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[90px] translate-x-[150px]">
+                  <p className="text-[16px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">
+                    SEO Services
+                  </p>
+                </div>
               </Link>
-              <Link href={"./Services"}><div
-                className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[30px] -translate-x-[180px]">
-                <p className="text-[16px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">
-                  Content Marketing
-                </p>
-              </div>
+              <Link href={"./Services"}>
+                <div className="bg-[#1F177A] w-[238px] h-[40px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[30px] -translate-x-[180px]">
+                  <p className="text-[16px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">
+                    Content Marketing
+                  </p>
+                </div>
               </Link>
             </div>
             <div className="block sm:hidden w-[231px] h-[248px] relative">
@@ -85,40 +86,40 @@ function Hero() {
                 height={100}
                 className="p-5 m-auto"
               />
-              <Link href={"./Services"}><div
-                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[50px]">
-                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">
-                  Lead Generation
-                </p>
-              </div>
+              <Link href={"./Services"}>
+                <div className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box absolute -translate-y-[240px] -translate-x-[50px]">
+                  <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing2 overflow-hidden whitespace-nowrap">
+                    Lead Generation
+                  </p>
+                </div>
               </Link>
-              <Link href={"./Services"}><div
-                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[200px] translate-x-[140px]">
-                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">
-                  Creative Marketing
-                </p>
-              </div>
+              <Link href={"./Services"}>
+                <div className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box3 absolute -translate-y-[200px] translate-x-[140px]">
+                  <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing3 overflow-hidden whitespace-nowrap">
+                    Creative Marketing
+                  </p>
+                </div>
               </Link>
-              <Link href={"./Services"}><div
-                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[160px] -translate-x-[80px]">
-                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">
-                  Paid Marketing
-                </p>
-              </div>
+              <Link href={"./Services"}>
+                <div className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box4 absolute -translate-y-[160px] -translate-x-[80px]">
+                  <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing4 overflow-hidden whitespace-nowrap">
+                    Paid Marketing
+                  </p>
+                </div>
               </Link>
-              <Link href={"./Services"}><div
-                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[100px] translate-x-[140px]">
-                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">
-                  SEO Services
-                </p>
-              </div>
+              <Link href={"./Services"}>
+                <div className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box5 absolute -translate-y-[100px] translate-x-[140px]">
+                  <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing5 overflow-hidden whitespace-nowrap">
+                    SEO Services
+                  </p>
+                </div>
               </Link>
-              <Link href={"./Services"}><div
-                className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[40px] -translate-x-[70px]">
-                <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">
-                  Content Marketing
-                </p>
-              </div>
+              <Link href={"./Services"}>
+                <div className="bg-[#1F177A] w-[150px] h-[30px] rounded-3xl flex justify-center items-center animate-box6 absolute -translate-y-[40px] -translate-x-[70px]">
+                  <p className="sm:text-[16px] text-[14px] font-[500] text-white text-center animate-typing6 overflow-hidden whitespace-nowrap">
+                    Content Marketing
+                  </p>
+                </div>
               </Link>
             </div>
           </div>
