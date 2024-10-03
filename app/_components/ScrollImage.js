@@ -14,8 +14,8 @@ const ScrollImage = () => {
     // Define the animation timeline for scaling the video
     tl.fromTo(
       "#video",
-      { scale: 0.6 },  // Initial scale
-      { scale: 0.8, duration: 1, transformOrigin: "center center" }  // End scale
+      { scale: 0.4 },  // Initial scale
+      { scale: 0.7, duration: 1, transformOrigin: "center center" }  // End scale
     );
 
     // Create the ScrollTrigger instance
