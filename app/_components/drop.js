@@ -114,8 +114,8 @@ const BouncingImages = () => {
       const y = Math.random() * (render.options.height - 100) + 50;
       const isMobile = window.innerWidth < 800;
 
-      const radius = isMobile ? 25.5 : 58;
-      const scale = isMobile ? 0.11 : 0.17;
+      const radius = isMobile ? 15.5 : 58;
+      const scale = isMobile ? 0.5 : 0.17;
 
       return Matter.Bodies.circle(x, y, radius, {
         restitution: 1,
