@@ -114,18 +114,23 @@ const BouncingImages = () => {
       const y = Math.random() * (render.options.height - 100) + 50;
       const isMobile = window.innerWidth < 800;
 
-      const radius = isMobile ? 15.5 : 58;
-      const scale = isMobile ? 0.11 : 0.17;
+      const radius = isMobile ? 22 : 51;
+      const scale = isMobile ? 0.08 : 0.19;
+      const restitution = isMobile ? 0.5 : 0.8; // Lower restitution for mobile to reduce bounce
+      const frictionAir = isMobile ? 0.05 : 0.02; // Increase air resistance on mobile
 
       return Matter.Bodies.circle(x, y, radius, {
-        restitution: 1,
+        restitution: restitution,
         friction: 0,
-        frictionAir: 0.02, // Add some air resistance to slow down fast movement
+        frictionAir: frictionAir,
         render: {
           sprite: {
             texture: image,
             xScale: scale,
             yScale: scale,
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
           },
         },
       });
@@ -135,9 +140,17 @@ const BouncingImages = () => {
 
     // Limit velocity to prevent disappearing on fast shakes
     Matter.Events.on(engine, "beforeUpdate", () => {
+      const maxVelocity = 10;
+      const minVelocity = 0.05; // Minimum velocity threshold to avoid jitter
+
       imageBodies.forEach((body) => {
-        // Limit maximum velocity
-        const maxVelocity = 10;
+        if (Math.abs(body.velocity.x) < minVelocity) {
+          Matter.Body.setVelocity(body, { x: 0, y: body.velocity.y });
+        }
+        if (Math.abs(body.velocity.y) < minVelocity) {
+          Matter.Body.setVelocity(body, { x: body.velocity.x, y: 0 });
+        }
+
         if (body.velocity.x > maxVelocity) {
           Matter.Body.setVelocity(body, { x: maxVelocity, y: body.velocity.y });
         }

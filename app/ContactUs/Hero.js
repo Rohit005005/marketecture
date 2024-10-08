@@ -1,10 +1,8 @@
 import React from "react";
-import Navbar from "../_components/Navbar";
 function Hero() {
 
   return (
     <div className="">
-      <Navbar />
       <div>
         <div className="text-center sm:text-left">
           <h1 className="sm:ml-24 py-3 sm:py-10 sm:text-4xl text-[28px] font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text inline-block text-transparent">CONTACT US</h1>

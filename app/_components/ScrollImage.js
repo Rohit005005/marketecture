@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -38,23 +38,20 @@ const ScrollImage = () => {
 
   return (
     <>
-      <section id="video-section" className="relative h-screen w-screen z-10 overflow-hidden">
-        <video
-          id="video"
-          src="/video.mp4"  // Replace with your video URL
-          className="object-cover h-full w-full"
-          controls  // Video controls like play/pause
-          autoPlay
-          muted
-          loop
-        />
+      <section id="video-section" className="relative h-screen w-screen overflow-hidden flex justify-center items-center">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <video
+            id="video"
+            src="/video.mp4"  // Replace with your video URL
+            className="object-cover w-full h-auto max-w-[100%] max-h-[100%]"
+            controls  // Video controls like play/pause
+            autoPlay
+            muted
+            loop
+          />
+        </div>
       </section>
       <div className="spacer h-screen w-screen grid place-content-center relative"></div>
-      {/* <section id="text" className="relative z-20 grid place-content-center h-screen w-screen">
-        <div className="bg-white p-8">
-          <h1>This is text</h1>
-        </div>
-      </section> */}
       <div className="spacer h-screen w-screen grid place-content-center relative">
         <h2></h2>
         <span className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
@@ -66,4 +63,3 @@ const ScrollImage = () => {
 };
 
 export default ScrollImage;
-

@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
-import Navbar from "./Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
 function Hero() {
   return (
     <div className="overflow-x-hidden">
-      <Navbar />
       <div>
         <div className="flex flex-col-reverse sm:flex-row justify-between items-center sm:px-[101px] mt-[70px]">
           <div className="  sm:w-[60%] p-5 sm:p-0">

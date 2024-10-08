@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../_components/Navbar";
 import HoverTile1 from "./HoverTile1";
 import HoverTile2 from "./HoverTile2";
 import HoverTile3 from "./HoverTile3";
@@ -11,7 +10,6 @@ function Hero() {
 
     return (
         <div className="">
-            <Navbar />
             <div>
                 <div className="text-center mt-8 flex justify-center flex-col items-center">
                     {/* <div className="text-center ">

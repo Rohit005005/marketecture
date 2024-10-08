@@ -112,10 +112,10 @@ function Footer() {
         <div className="flex flex-col gap-8 sm:gap-10 whitespace-nowrap ">
           <h1 className="text-[20px] font-[700] text-white">Contact</h1>
           <div className="text-[16px] font-[400] text-[#BBBBBB]">
-            <p>Mail us</p>
-            <Link href={"/ContactUs"}>
-              <p>hello@Marketecture.com</p>
-            </Link>
+            <a href="mailto:info@Marketecture.com">
+              <p>Mail us</p>
+              <p>info@Marketecture.com</p>
+            </a>
           </div>
           <h1 className="text-[16px] font-[400] text-[#BBBBBB]">
             Business Enquiries
