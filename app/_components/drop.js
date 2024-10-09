@@ -84,29 +84,29 @@ const BouncingImages = () => {
       "/logo/comp9.png",
       "/logo/comp10.png",
       "/logo/comp11.png",
-      "/logo/comp12.png",
-      "/logo/comp13.png",
-      "/logo/comp14.png",
-      "/logo/comp15.png",
-      "/logo/comp16.png",
-      "/logo/comp17.png",
-      "/logo/comp18.png",
-      "/logo/comp19.png",
-      "/logo/comp20.png",
-      "/logo/comp21.png",
-      "/logo/comp22.png",
-      "/logo/comp23.png",
-      "/logo/comp24.png",
-      "/logo/comp25.png",
-      "/logo/comp26.png",
-      "/logo/comp27.png",
-      "/logo/comp28.png",
-      "/logo/comp29.png",
-      "/logo/comp30.png",
-      "/logo/comp31.png",
-      "/logo/comp32.png",
-      "/logo/comp33.png",
-      "/logo/comp34.png",
+      "/logo/img1.png",
+      "/logo/img2.png",
+      "/logo/img3.png",
+      "/logo/img4.png",
+      "/logo/img5.png",
+      "/logo/img6.png",
+      "/logo/img7.png",
+      "/logo/img8.png",
+      "/logo/img9.png",
+      "/logo/img10.png",
+      "/logo/img11.png",
+      "/logo/img12.png",
+      "/logo/img13.png",
+      "/logo/img14.png",
+      "/logo/img15.png",
+      "/logo/img16.png",
+      "/logo/img17.png",
+      "/logo/img18.png",
+      "/logo/img19.png",
+      "/logo/img20.png",
+      "/logo/img21.png",
+      "/logo/img22.png",
+      "/logo/img23.png",
     ];
 
     const imageBodies = images.map((image) => {
@@ -115,7 +115,7 @@ const BouncingImages = () => {
       const isMobile = window.innerWidth < 800;
 
       const radius = isMobile ? 22 : 51;
-      const scale = isMobile ? 0.08 : 0.19;
+      const scale = isMobile ? 0.065 : 0.15;
       const restitution = isMobile ? 0.5 : 0.8; // Lower restitution for mobile to reduce bounce
       const frictionAir = isMobile ? 0.05 : 0.02; // Increase air resistance on mobile
 
@@ -226,7 +226,7 @@ const BouncingImages = () => {
       <ReadyToBuild />
       <div
         ref={sceneRef}
-        className="w-full h-[40vh] sm:h-[70vh] border-none p-0 m-0 bg-transparent"
+        className="w-full h-[40vh] sm:h-[80vh] border-none p-0 m-0 bg-transparent"
       />
     </div>
   );
