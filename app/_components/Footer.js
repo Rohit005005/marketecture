@@ -64,7 +64,7 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex gap-20">
+        <div className="flex flex-col sm:flex-row gap-20">
           <div className="flex flex-col gap-8 sm:gap-10 whitespace-nowrap">
             <h1 className="text-[20px] font-[700] text-white">Solutions</h1>
             <Link href={"/Services"}>
