@@ -57,8 +57,7 @@ function Footer() {
               to transforming vision into iconic brand experiences. We serve as
               the catalyst propelling your brand's journey to success.
               Leveraging the transformative power of captivating storytelling
-              and strategic brand building. With offices in the US, UK and
-              India. We collaborate globally to craft high-impact strategies,
+              and strategic brand building. With office in India - Bengaluru. We collaborate globally to craft high-impact strategies,
               digital experience and media solutions tailored to elevate your
               brand to new heights.
             </p>

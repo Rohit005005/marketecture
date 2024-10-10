@@ -94,7 +94,7 @@ const stepsmobile = [
 
 export default function WorkProcess() {
   return (
-    <div className="flex flex-col items-center py-16 mt-16 relative overflow-x-hidden">
+    <div className="flex flex-col items-center py-16 mt-0 relative overflow-x-hidden">
       <h1 className="text-[24px] sm:text-[48px] md:text-5xl font-extrabold text-center mb-2 leading-tight text-gray-900">
         We Always Follow The <br className="block" />
         Standard<span className="text-red-500"> Work Process</span>
